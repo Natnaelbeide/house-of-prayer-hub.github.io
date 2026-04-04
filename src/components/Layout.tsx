@@ -1,7 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Star } from "lucide-react";
 import logo from "@/assets/logo.png";
+
+const STORAGE_KEY = "fapim_bible_tracker";
+
+function useTrackerComplete() {
+  const [complete, setComplete] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return setComplete(false);
+        const state = JSON.parse(raw);
+        const count = Object.values(state.completed || {}).filter(Boolean).length;
+        setComplete(count >= 90);
+      } catch { setComplete(false); }
+    };
+    check();
+    window.addEventListener("storage", check);
+    const interval = setInterval(check, 1000);
+    return () => { window.removeEventListener("storage", check); clearInterval(interval); };
+  }, []);
+  return complete;
+}
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -15,13 +37,19 @@ const navLinks = [
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const trackerComplete = useTrackerComplete();
 
   return (
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container flex items-center justify-between h-16 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="FAPIM Logo" className="h-10 w-10 object-contain" />
+            <div className="relative">
+              <img src={logo} alt="FAPIM Logo" className="h-10 w-10 object-contain" />
+              {trackerComplete && (
+                <Star size={14} className="absolute -top-1 -right-1 text-accent fill-accent animate-glow-pulse" />
+              )}
+            </div>
             <span className="font-heading text-sm font-bold text-primary hidden sm:block leading-tight">
               FAPIM
             </span>
