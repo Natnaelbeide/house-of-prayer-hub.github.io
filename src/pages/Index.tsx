@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Clock, MapPin, Heart, ChevronRight } from "lucide-react";
+import { Clock, MapPin, Heart, ChevronRight, Youtube } from "lucide-react";
 import Layout from "@/components/Layout";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
