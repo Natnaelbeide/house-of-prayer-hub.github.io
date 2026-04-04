@@ -30,7 +30,7 @@ export default function Connect() {
                 <Mail size={24} className="text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-heading font-semibold text-foreground mb-1">Email</h3>
-                  <p className="text-muted-foreground text-sm">beidenatnael@gmail.com</p>
+                  <p className="text-muted-foreground text-sm italic">Coming soon</p>
                 </div>
               </div>
               <a
