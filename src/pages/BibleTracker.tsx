@@ -84,9 +84,21 @@ export default function BibleTracker() {
               />
             </div>
             {progress === 100 && (
-              <p className="text-center text-accent font-heading font-bold mt-3 text-lg animate-glow-pulse">
-                🎉 Congratulations! You completed the Bible in 90 days!
-              </p>
+              <div className="text-center mt-3">
+                <p className="text-accent font-heading font-bold text-lg animate-glow-pulse mb-3">
+                  🎉 Congratulations! You completed the Bible in 90 days!
+                </p>
+                <button
+                  onClick={() => {
+                    if (window.confirm("Reset your progress and start a new 90-day cycle?")) {
+                      setState({ completed: {}, notes: {} });
+                    }
+                  }}
+                  className="px-5 py-2 rounded-lg bg-accent text-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
+                >
+                  ⭐ Start New Cycle
+                </button>
+              </div>
             )}
           </div>
 
