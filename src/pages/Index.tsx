@@ -1,27 +1,72 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Clock, MapPin, Heart, ChevronRight, Youtube, BookOpen, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
+function useParallax() {
+  const bgRef = useRef<HTMLImageElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translateY(${y * 0.35}px) scale(1.1)`;
+      }
+      if (contentRef.current) {
+        contentRef.current.style.transform = `translateY(${y * 0.15}px)`;
+        contentRef.current.style.opacity = `${Math.max(0, 1 - y / 600)}`;
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return { bgRef, contentRef };
+}
+
 export default function Index() {
+  const { bgRef, contentRef } = useParallax();
+
   return (
     <Layout>
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
+        <img
+          ref={bgRef}
+          src={heroBg}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover scale-110 will-change-transform"
+          width={1920}
+          height={1080}
+        />
         <div className="absolute inset-0 bg-gradient-hero" />
-        <div className="relative z-10 text-center px-4 animate-fade-in-up max-w-3xl mx-auto">
-          <div className="mb-8">
-            <img src={logo} alt="FAPIM Logo" className="w-32 h-32 mx-auto drop-shadow-[0_0_30px_rgba(191,140,44,0.4)]" />
+        <div ref={contentRef} className="relative z-10 text-center px-4 max-w-3xl mx-auto will-change-transform">
+          <div className="mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <img
+              src={logo}
+              alt="FAPIM Logo"
+              className="w-32 h-32 mx-auto drop-shadow-[0_0_30px_rgba(191,140,44,0.4)] animate-[glow-pulse_4s_ease-in-out_infinite]"
+            />
           </div>
-          <h1 className="font-heading text-4xl sm:text-6xl font-bold text-primary-foreground mb-4 leading-tight drop-shadow-lg">
+          <h1
+            className="font-heading text-4xl sm:text-6xl font-bold text-primary-foreground mb-4 leading-tight drop-shadow-lg animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
+          >
             Foundation of the Apostles<br className="hidden sm:block" /> and Prophets
           </h1>
-          <p className="text-primary-foreground/90 text-lg sm:text-2xl font-body mb-10 tracking-wide">
+          <p
+            className="text-primary-foreground/90 text-lg sm:text-2xl font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
+          >
             House of Prayer International Ministry
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.7s", animationFillMode: "forwards" }}
+          >
             <Link
               to="/connect"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-gradient-gold text-foreground font-semibold shadow-gold hover:scale-105 transition-transform text-lg"
@@ -37,7 +82,7 @@ export default function Index() {
           </div>
         </div>
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Service Times */}
