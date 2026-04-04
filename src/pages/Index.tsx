@@ -96,6 +96,41 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Watch Online */}
+      <section className="py-20 bg-background">
+        <div className="container px-4">
+          <h2 className="font-heading text-3xl font-bold text-center text-foreground mb-2">Watch Online</h2>
+          <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-4" />
+          <p className="text-center text-muted-foreground mb-10 max-w-md mx-auto">
+            Catch up on sermons and worship from Pastor Henok Habte on our YouTube channel.
+          </p>
+          <div className="max-w-3xl mx-auto">
+            <div className="rounded-xl overflow-hidden shadow-card border border-border aspect-video mb-6">
+              <iframe
+                title="FAPIM YouTube Channel"
+                src="https://www.youtube.com/embed?listType=user_uploads&list=rahabot"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              />
+            </div>
+            <div className="text-center">
+              <a
+                href="https://www.youtube.com/@rahabot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-destructive text-destructive-foreground font-semibold hover:opacity-90 transition-opacity"
+              >
+                <Youtube size={20} /> Subscribe on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Giving */}
       <section className="py-20 bg-background">
         <div className="container px-4">
