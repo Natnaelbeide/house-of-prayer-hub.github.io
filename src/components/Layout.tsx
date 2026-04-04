@@ -1,7 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Star } from "lucide-react";
 import logo from "@/assets/logo.png";
+
+const STORAGE_KEY = "fapim_bible_tracker";
+
+function useTrackerComplete() {
+  const [complete, setComplete] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return setComplete(false);
+        const state = JSON.parse(raw);
+        const count = Object.values(state.completed || {}).filter(Boolean).length;
+        setComplete(count >= 90);
+      } catch { setComplete(false); }
+    };
+    check();
+    window.addEventListener("storage", check);
+    const interval = setInterval(check, 1000);
+    return () => { window.removeEventListener("storage", check); clearInterval(interval); };
+  }, []);
+  return complete;
+}
 
 const navLinks = [
   { to: "/", label: "Home" },
