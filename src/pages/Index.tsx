@@ -108,7 +108,7 @@ export default function Index() {
             <div className="rounded-xl overflow-hidden shadow-card border border-border aspect-video mb-6">
               <iframe
                 title="FAPIM YouTube Channel"
-                src="https://www.youtube.com/embed?listType=user_uploads&list=rahabot"
+                src="https://www.youtube.com/embed/videoseries?list=UUjokQ06rjxq7k2nFf9NiMNw"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
