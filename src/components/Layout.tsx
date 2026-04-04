@@ -37,6 +37,7 @@ const navLinks = [
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const trackerComplete = useTrackerComplete();
 
   return (
     <div className="min-h-screen flex flex-col">
