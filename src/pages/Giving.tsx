@@ -1,7 +1,11 @@
 import Layout from "@/components/Layout";
 import { Heart, Gift, HandHeart } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Giving() {
+  const cardsRef = useScrollReveal();
+  const scriptureRef = useScrollReveal();
+
   return (
     <Layout>
       {/* Hero Banner */}
@@ -25,16 +29,15 @@ export default function Giving() {
 
       {/* Giving Cards */}
       <section className="py-24 bg-background">
-        <div className="container px-4">
+        <div ref={cardsRef} className="container px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               { method: "Zelle", number: "319-330-4590", desc: "Send directly via your bank's Zelle service.", icon: Gift },
               { method: "CashApp", number: "319-330-4590", desc: "Send via CashApp using the number below.", icon: HandHeart },
-            ].map((g, i) => (
+            ].map((g) => (
               <div
                 key={g.method}
-                className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${0.2 + i * 0.15}s`, animationFillMode: "forwards" }}
+                className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <g.icon size={26} className="text-accent" />
@@ -50,8 +53,8 @@ export default function Giving() {
 
       {/* Scripture */}
       <section className="py-24 bg-muted">
-        <div className="container px-4">
-          <div className="max-w-xl mx-auto bg-card rounded-2xl p-10 shadow-card border border-border text-center animate-fade-in-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
+        <div ref={scriptureRef} className="container px-4">
+          <div className="max-w-xl mx-auto bg-card rounded-2xl p-10 shadow-card border border-border text-center">
             <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
               <Heart size={26} className="text-accent" />
             </div>

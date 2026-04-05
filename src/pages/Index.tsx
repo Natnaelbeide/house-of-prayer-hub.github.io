@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Clock, MapPin, Heart, ChevronRight, Youtube, BookOpen, Users } from "lucide-react";
 import Layout from "@/components/Layout";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -29,6 +30,10 @@ function useParallax() {
 
 export default function Index() {
   const { bgRef, contentRef } = useParallax();
+  const serviceRef = useScrollReveal();
+  const locationRef = useScrollReveal();
+  const watchRef = useScrollReveal();
+  const givingRef = useScrollReveal();
 
   return (
     <Layout>
@@ -81,13 +86,12 @@ export default function Index() {
             </Link>
           </div>
         </div>
-        {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Service Times */}
       <section className="py-24 bg-background relative">
-        <div className="container px-4">
+        <div ref={serviceRef} className="container px-4">
           <div className="text-center mb-14">
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Join Us</p>
             <h2 className="font-heading text-4xl font-bold text-foreground">Service Times</h2>
@@ -111,7 +115,7 @@ export default function Index() {
 
       {/* Location */}
       <section className="py-24 bg-muted">
-        <div className="container px-4">
+        <div ref={locationRef} className="container px-4">
           <div className="text-center mb-14">
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Find Us</p>
             <h2 className="font-heading text-4xl font-bold text-foreground">Our Location</h2>
@@ -153,7 +157,7 @@ export default function Index() {
 
       {/* Watch Online */}
       <section className="py-24 bg-background">
-        <div className="container px-4">
+        <div ref={watchRef} className="container px-4">
           <div className="text-center mb-14">
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Watch Anytime</p>
             <h2 className="font-heading text-4xl font-bold text-foreground">Watch Online</h2>
@@ -191,7 +195,7 @@ export default function Index() {
 
       {/* Giving */}
       <section className="py-24 bg-muted">
-        <div className="container px-4">
+        <div ref={givingRef} className="container px-4">
           <div className="text-center mb-14">
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Support the Ministry</p>
             <h2 className="font-heading text-4xl font-bold text-foreground">Ways to Give</h2>
