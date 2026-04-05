@@ -1,7 +1,10 @@
 import Layout from "@/components/Layout";
-import { ImageIcon, Camera } from "lucide-react";
+import { Camera } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Gallery() {
+  const contentRef = useScrollReveal();
+
   return (
     <Layout>
       {/* Hero Banner */}
@@ -22,8 +25,8 @@ export default function Gallery() {
 
       {/* Coming Soon */}
       <section className="py-24 bg-background">
-        <div className="container px-4">
-          <div className="max-w-md mx-auto text-center animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <div ref={contentRef} className="container px-4">
+          <div className="max-w-md mx-auto text-center">
             <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mx-auto mb-6">
               <Camera size={36} className="text-muted-foreground/40" />
             </div>

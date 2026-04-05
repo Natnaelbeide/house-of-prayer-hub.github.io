@@ -1,7 +1,11 @@
 import Layout from "@/components/Layout";
 import { Clock, BookOpen, Users, Music } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Services() {
+  const cardsRef = useScrollReveal();
+  const expectRef = useScrollReveal();
+
   return (
     <Layout>
       {/* Hero Banner */}
@@ -25,16 +29,15 @@ export default function Services() {
 
       {/* Service Cards */}
       <section className="py-24 bg-background">
-        <div className="container px-4">
+        <div ref={cardsRef} className="container px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               { day: "Friday Night Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
               { day: "Sunday Service", time: "3:00 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
-            ].map((s, i) => (
+            ].map((s) => (
               <div
                 key={s.day}
-                className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${0.2 + i * 0.15}s`, animationFillMode: "forwards" }}
+                className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
               >
                 <span className="text-5xl mb-4 block">{s.icon}</span>
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
@@ -51,7 +54,7 @@ export default function Services() {
 
       {/* What to Expect */}
       <section className="py-24 bg-muted">
-        <div className="container px-4">
+        <div ref={expectRef} className="container px-4">
           <div className="text-center mb-14">
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">First Time?</p>
             <h2 className="font-heading text-4xl font-bold text-foreground">What to Expect</h2>
@@ -62,12 +65,8 @@ export default function Services() {
               { icon: Music, title: "Worship", desc: "Spirit-filled praise and worship to set the atmosphere for God's presence." },
               { icon: BookOpen, title: "The Word", desc: "Powerful biblical teaching and preaching rooted in Scripture." },
               { icon: Users, title: "Fellowship", desc: "A warm, welcoming community where everyone belongs." },
-            ].map((item, i) => (
-              <div
-                key={item.title}
-                className="text-center animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${0.2 + i * 0.15}s`, animationFillMode: "forwards" }}
-              >
+            ].map((item) => (
+              <div key={item.title} className="text-center">
                 <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <item.icon size={28} className="text-accent" />
                 </div>
