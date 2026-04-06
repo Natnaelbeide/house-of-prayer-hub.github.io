@@ -51,7 +51,7 @@ export default function Connect() {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-foreground mb-1">Email</h3>
-                  <p className="text-muted-foreground text-sm italic">Coming soon</p>
+                  <a href="mailto:contact@houseofprayer.com" className="text-accent hover:underline text-sm">contact@houseofprayer.com</a>
                 </div>
               </div>
               <a
