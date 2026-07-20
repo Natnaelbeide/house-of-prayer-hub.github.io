@@ -28,6 +28,7 @@ function useTrackerComplete() {
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
+  { to: "/children-youth", label: "Children & Youth" },
   { to: "/giving", label: "Giving" },
   { to: "/gallery", label: "Gallery" },
   { to: "/connect", label: "Connect" },
