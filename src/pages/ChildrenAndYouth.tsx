@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Users, BookOpen, Music, Heart, Sparkles } from "lucide-react";
+import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
@@ -48,10 +48,9 @@ export default function ChildrenAndYouth() {
             <h2 className="font-heading text-4xl font-bold text-foreground">What We Offer</h2>
             <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens." },
-              { icon: Music, title: "Worship", desc: "Youth-led praise and worship to encounter God's presence." },
               { icon: Users, title: "Mentorship", desc: "Guidance and discipleship from caring adult leaders." },
               { icon: Heart, title: "Fellowship", desc: "Games, activities, and events that build lasting friendships." },
             ].map((item) => (
