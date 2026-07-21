@@ -51,7 +51,6 @@ export default function ChildrenAndYouth() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
               { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens." },
-              { icon: Music, title: "Worship", desc: "Youth-led praise and worship to encounter God's presence." },
               { icon: Users, title: "Mentorship", desc: "Guidance and discipleship from caring adult leaders." },
               { icon: Heart, title: "Fellowship", desc: "Games, activities, and events that build lasting friendships." },
             ].map((item) => (
