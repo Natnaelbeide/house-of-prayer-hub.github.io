@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
+import { Users, BookOpen, Heart, Sparkles, Music } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
