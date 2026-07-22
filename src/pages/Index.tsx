@@ -49,12 +49,14 @@ export default function Index() {
         />
         <div className="absolute inset-0 bg-gradient-hero" />
         <div ref={contentRef} className="relative z-10 text-center px-4 max-w-3xl mx-auto will-change-transform">
-          <div className="mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            <img
-              src={logo}
-              alt="FAPIM Logo"
-              className="w-32 h-32 mx-auto drop-shadow-[0_0_30px_rgba(191,140,44,0.4)] animate-[glow-pulse_4s_ease-in-out_infinite]"
-            />
+          <div className="mb-8 animate-fade-in-up flex justify-center" style={{ animationDelay: "0.1s" }}>
+            <div className="relative rounded-full bg-white/95 p-5 shadow-[0_0_60px_rgba(191,140,44,0.5)] ring-2 ring-accent/40 animate-[glow-pulse_4s_ease-in-out_infinite]">
+              <img
+                src={logo}
+                alt="FAPIM Logo"
+                className="w-48 h-48 sm:w-56 sm:h-56 object-contain"
+              />
+            </div>
           </div>
           <h1
             className="font-heading text-4xl sm:text-6xl font-bold text-primary-foreground mb-4 leading-tight drop-shadow-lg animate-fade-in-up opacity-0"
