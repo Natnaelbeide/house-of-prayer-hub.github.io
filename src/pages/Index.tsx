@@ -50,7 +50,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-hero" />
         <div ref={contentRef} className="relative z-10 text-center px-4 max-w-3xl mx-auto will-change-transform">
           <div className="mb-8 animate-fade-in-up flex justify-center" style={{ animationDelay: "0.1s" }}>
-            <div className="relative rounded-full bg-white/95 p-5 shadow-[0_0_60px_rgba(191,140,44,0.5)] ring-2 ring-accent/40 animate-[glow-pulse_4s_ease-in-out_infinite]">
+            <div className="relative rounded-full bg-black/30 backdrop-blur-md p-5 shadow-[0_0_60px_rgba(191,140,44,0.45)] ring-[1.5px] ring-accent/50 animate-[glow-pulse_4s_ease-in-out_infinite]">
               <img
                 src={logo}
                 alt="FAPIM Logo"
