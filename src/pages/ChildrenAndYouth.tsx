@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
+import bibleLessonsPdf from "@/assets/FaithWorks_III.pdf.asset.json";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
@@ -50,18 +51,30 @@ export default function ChildrenAndYouth() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens." },
+              { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens.", href: bibleLessonsPdf.url },
               { icon: Users, title: "Mentorship", desc: "Guidance and discipleship from caring adult leaders." },
               { icon: Heart, title: "Fellowship", desc: "Games, activities, and events that build lasting friendships." },
-            ].map((item) => (
-              <div key={item.title} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
-                <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon size={26} className="text-accent" />
+            ].map((item) => {
+              const content = (
+                <>
+                  <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                    <item.icon size={26} className="text-accent" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </>
+              );
+              const className = "group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300";
+              return item.href ? (
+                <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" className={className}>
+                  {content}
+                </a>
+              ) : (
+                <div key={item.title} className={className}>
+                  {content}
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
