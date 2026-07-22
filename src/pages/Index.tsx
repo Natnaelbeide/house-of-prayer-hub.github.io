@@ -66,7 +66,7 @@ export default function Index() {
             className="text-primary-foreground/90 text-lg sm:text-2xl font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
           >
-            House of Prayer International Ministry
+            House of Prayer Church DMV
           </p>
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0"
