@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
+import bibleLessonsPdf from "@/assets/FaithWorks_III.pdf.asset.json";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
