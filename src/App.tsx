@@ -9,6 +9,7 @@ import Giving from "./pages/Giving";
 import Gallery from "./pages/Gallery";
 import Connect from "./pages/Connect";
 import ChildrenAndYouth from "./pages/ChildrenAndYouth";
+import BibleLessons from "./pages/BibleLessons";
 import BibleTracker from "./pages/BibleTracker";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/children-youth" element={<ChildrenAndYouth />} />
+          <Route path="/children-youth/bible-lessons" element={<BibleLessons />} />
           <Route path="/bible-tracker" element={<BibleTracker />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
-import bibleLessonsPdf from "@/assets/FaithWorks_III.pdf.asset.json";
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
@@ -51,7 +51,7 @@ export default function ChildrenAndYouth() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens.", href: bibleLessonsPdf.url },
+              { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens.", to: "/children-youth/bible-lessons" },
               { icon: Users, title: "Mentorship", desc: "Guidance and discipleship from caring adult leaders." },
               { icon: Heart, title: "Fellowship", desc: "Games, activities, and events that build lasting friendships." },
             ].map((item) => {
@@ -65,10 +65,10 @@ export default function ChildrenAndYouth() {
                 </>
               );
               const className = "group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300";
-              return item.href ? (
-                <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" className={className}>
+              return item.to ? (
+                <Link key={item.title} to={item.to} className={className}>
                   {content}
-                </a>
+                </Link>
               ) : (
                 <div key={item.title} className={className}>
                   {content}
