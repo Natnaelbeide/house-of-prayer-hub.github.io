@@ -117,7 +117,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <p className="font-heading font-bold text-sm">and Prophets</p>
                 </div>
               </div>
-              <p className="text-sm opacity-80">House of Prayer International Ministry</p>
+              <p className="text-sm opacity-80">House of Prayer Church DMV</p>
             </div>
             <div>
               <h4 className="font-heading font-bold mb-3">Service Times</h4>
