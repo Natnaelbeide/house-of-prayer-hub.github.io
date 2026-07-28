@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { MapPin, Mail, ChevronRight } from "lucide-react";
+import { MapPin, Mail, ChevronRight, Youtube, Facebook, Instagram } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Connect() {
