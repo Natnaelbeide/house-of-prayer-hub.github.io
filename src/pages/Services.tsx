@@ -33,7 +33,7 @@ export default function Services() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               { day: "Friday Night Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
-              { day: "Sunday Service", time: "3:00 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
+              { day: "Sunday Service", time: "3:30 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
             ].map((s) => (
               <div
                 key={s.day}

@@ -108,7 +108,7 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               { day: "Friday Night", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
-              { day: "Sunday", time: "3:00 PM", icon: "☀️", desc: "Main Service" },
+              { day: "Sunday", time: "3:30 PM", icon: "☀️", desc: "Main Service" },
             ].map((s) => (
               <div key={s.day} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                 <span className="text-4xl mb-4 block">{s.icon}</span>

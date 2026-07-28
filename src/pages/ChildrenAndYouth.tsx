@@ -86,7 +86,7 @@ export default function ChildrenAndYouth() {
           <p className="text-primary-foreground/80 mb-8 text-lg">
             All children and youth are welcome to join us during our regular services.
           </p>
-          <p className="text-accent font-semibold">Friday 6:30 PM · Sunday 3:00 PM</p>
+          <p className="text-accent font-semibold">Friday 6:30 PM · Sunday 3:30 PM</p>
         </div>
       </section>
     </Layout>
