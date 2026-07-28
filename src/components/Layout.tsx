@@ -32,7 +32,7 @@ const navLinks = [
   { to: "/giving", label: "Giving" },
   { to: "/gallery", label: "Gallery" },
   { to: "/connect", label: "Connect" },
-  { to: "/bible-tracker", label: "Bible Tracker" },
+  { to: "/bible-tracker", label: "Bible Reading Tracker" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

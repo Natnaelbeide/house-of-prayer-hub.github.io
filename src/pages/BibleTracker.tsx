@@ -64,7 +64,7 @@ export default function BibleTracker() {
       <section className="py-12 bg-background">
         <div className="container px-4 max-w-2xl">
           <h1 className="font-heading text-3xl sm:text-4xl font-bold text-center text-foreground mb-2">
-            90-Day Bible Tracker
+            90-Day Bible Reading Tracker
           </h1>
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6" />
           <p className="text-center text-muted-foreground mb-8">
