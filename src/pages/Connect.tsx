@@ -71,7 +71,9 @@ export default function Connect() {
                       <Youtube size={20} />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/share/1bngFxjwt3/?mibextid=wwXIfr"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label="Facebook"
                       className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
@@ -85,7 +87,7 @@ export default function Connect() {
                       <Instagram size={20} />
                     </a>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2">Send us your Facebook & Instagram links to activate those buttons.</p>
+                  <p className="text-xs text-muted-foreground mt-2">Send us your Instagram link to activate that button.</p>
                 </div>
               </div>
               <a
