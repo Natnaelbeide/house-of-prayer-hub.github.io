@@ -90,7 +90,7 @@ export default function Index() {
               to="/bible-tracker"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-primary-foreground/40 text-primary-foreground font-medium hover:bg-primary-foreground/10 transition-colors text-lg"
             >
-              <BookOpen size={20} /> 90-Day Bible Tracker
+              <BookOpen size={20} /> 90-Day Bible Reading Tracker
             </Link>
           </div>
         </div>
