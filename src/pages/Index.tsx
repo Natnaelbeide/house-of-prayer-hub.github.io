@@ -59,13 +59,13 @@ export default function Index() {
             </div>
           </div>
           <h1
-            className="font-heading text-4xl sm:text-6xl font-bold text-primary-foreground mb-4 leading-tight drop-shadow-lg animate-fade-in-up opacity-0"
+            className="font-heading text-2xl sm:text-4xl font-bold text-primary-foreground mb-3 leading-tight drop-shadow-lg animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
           >
             Foundation of the Apostles<br className="hidden sm:block" /> and Prophets
           </h1>
           <p
-            className="text-primary-foreground/90 text-lg sm:text-2xl font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
+            className="text-primary-foreground/90 text-base sm:text-lg font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
           >
             House of Prayer Church DMV
