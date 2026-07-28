@@ -62,7 +62,7 @@ export default function Index() {
             className="font-heading text-xl sm:text-2xl font-bold text-primary-foreground mb-3 leading-tight drop-shadow-lg animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
           >
-            Foundation of the Apostles<br className="hidden sm:block" /> and Prophets
+            Foundation of the Apostles and Prophets
           </h1>
           <p
             className="text-primary-foreground/90 text-xl sm:text-2xl font-body font-medium mb-2 tracking-wide animate-fade-in-up opacity-0"
