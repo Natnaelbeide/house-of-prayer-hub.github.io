@@ -87,7 +87,7 @@ export default function Connect() {
                       <Instagram size={20} />
                     </a>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2">Send us your Facebook & Instagram links to activate those buttons.</p>
+                  <p className="text-xs text-muted-foreground mt-2">Send us your Instagram link to activate that button.</p>
                 </div>
               </div>
               <a
