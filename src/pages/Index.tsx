@@ -65,10 +65,16 @@ export default function Index() {
             Foundation of the Apostles<br className="hidden sm:block" /> and Prophets
           </h1>
           <p
-            className="text-primary-foreground/90 text-base sm:text-lg font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
+            className="text-primary-foreground/90 text-base sm:text-lg font-body mb-2 tracking-wide animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
           >
             House of Prayer Church DMV
+          </p>
+          <p
+            className="text-primary-foreground/90 text-base sm:text-lg font-body mb-10 tracking-wide animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+          >
+            ቤት ጸሎት መሰረት ነብያትን ሃዋርያትን DMV
           </p>
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0"
