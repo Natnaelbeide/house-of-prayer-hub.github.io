@@ -54,6 +54,40 @@ export default function Connect() {
                   <a href="mailto:contact@houseofprayer.com" className="text-accent hover:underline text-sm">contact@houseofprayer.com</a>
                 </div>
               </div>
+              <div className="bg-card rounded-2xl p-6 shadow-card border border-border flex gap-4 items-start hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Youtube size={22} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold text-foreground mb-2">Social Media</h3>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href="https://www.youtube.com/@rahabot"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="YouTube"
+                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <Youtube size={20} />
+                    </a>
+                    <a
+                      href="#"
+                      aria-label="Facebook"
+                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <Facebook size={20} />
+                    </a>
+                    <a
+                      href="#"
+                      aria-label="Instagram"
+                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <Instagram size={20} />
+                    </a>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-2">Send us your Facebook & Instagram links to activate those buttons.</p>
+                </div>
+              </div>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=3846+King+St+Alexandria+VA+22302"
                 target="_blank"
