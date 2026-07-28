@@ -94,8 +94,15 @@ export default function Connect() {
                     >
                       <Instagram size={20} />
                     </a>
+                    <a
+                      href="#"
+                      aria-label="TikTok"
+                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <TikTokIcon size={20} />
+                    </a>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2">Send us your Instagram link to activate that button.</p>
+                  <p className="text-xs text-muted-foreground mt-2">Send us your Instagram and TikTok links to activate those buttons.</p>
                 </div>
               </div>
               <a
