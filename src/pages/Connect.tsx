@@ -67,17 +67,25 @@ export default function Connect() {
                   <Youtube size={22} className="text-accent" />
                 </div>
                 <div>
+                  <h3 className="font-heading font-semibold text-foreground mb-1">Watch Us Live</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Catch our latest services and updates on YouTube.</p>
+                  <a
+                    href="https://www.youtube.com/@rahabot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-accent hover:underline text-sm font-medium"
+                  >
+                    youtube.com/@rahabot <ChevronRight size={14} />
+                  </a>
+                </div>
+              </div>
+              <div className="bg-card rounded-2xl p-6 shadow-card border border-border flex gap-4 items-start hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Mail size={22} className="text-accent" />
+                </div>
+                <div>
                   <h3 className="font-heading font-semibold text-foreground mb-2">Social Media</h3>
                   <div className="flex flex-wrap gap-3">
-                    <a
-                      href="https://www.youtube.com/@rahabot"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="YouTube"
-                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-                    >
-                      <Youtube size={20} />
-                    </a>
                     <a
                       href="https://www.facebook.com/share/1bngFxjwt3/?mibextid=wwXIfr"
                       target="_blank"
