@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Clock, MapPin, Heart, ChevronRight, Youtube, BookOpen, Users } from "lucide-react";
+import { MapPin, Heart, ChevronRight, Youtube, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
+import UpcomingPopup from "@/components/UpcomingPopup";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
