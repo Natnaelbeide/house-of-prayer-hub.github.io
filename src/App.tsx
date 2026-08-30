@@ -11,6 +11,7 @@ import Connect from "./pages/Connect";
 import ChildrenAndYouth from "./pages/ChildrenAndYouth";
 import BibleLessons from "./pages/BibleLessons";
 import BibleTracker from "./pages/BibleTracker";
+import Announcements from "./pages/Announcements";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/children-youth" element={<ChildrenAndYouth />} />
           <Route path="/children-youth/bible-lessons" element={<BibleLessons />} />
           <Route path="/bible-tracker" element={<BibleTracker />} />
+          <Route path="/announcements" element={<Announcements />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
