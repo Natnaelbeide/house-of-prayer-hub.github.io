@@ -105,10 +105,11 @@ export default function Index() {
             <h2 className="font-heading text-4xl font-bold text-foreground">Service Times</h2>
             <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               { day: "Friday Night", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
               { day: "Sunday", time: "3:30 PM", icon: "☀️", desc: "Main Service" },
+              { day: "Wednesday Ministers Class", time: "8:00 PM", icon: "💻", desc: "Zoom Class for Ministers" },
             ].map((s) => (
               <div key={s.day} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                 <span className="text-4xl mb-4 block">{s.icon}</span>
