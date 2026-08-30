@@ -34,7 +34,7 @@ export default function Services() {
             {[
               { day: "Friday Night Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
               { day: "Sunday Service", time: "3:30 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
-              { day: "Wednesday Ministers Class", time: "8:00 PM", desc: "Weekly Zoom class for ministers — Bible study, prayer, and equipping.", icon: "💻" },
+              { day: "Wednesday Ministers Class", time: "8:00 PM", desc: "Weekly Zoom class teaching how to be a servant of God.", icon: "💻" },
             ].map((s) => (
               <div
                 key={s.day}

@@ -109,7 +109,7 @@ export default function Index() {
             {[
               { day: "Friday Night", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
               { day: "Sunday", time: "3:30 PM", icon: "☀️", desc: "Main Service" },
-              { day: "Wednesday Ministers Class", time: "8:00 PM", icon: "💻", desc: "Zoom Class for Ministers" },
+              { day: "Wednesday Ministers Class", time: "8:00 PM", icon: "💻", desc: "Teaching How to Be a Servant of God" },
             ].map((s) => (
               <div key={s.day} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                 <span className="text-4xl mb-4 block">{s.icon}</span>
