@@ -32,6 +32,13 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
+                title: "Upcoming Conference",
+                date: "November 6-8",
+                time: "TBA",
+                desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
+                highlight: true,
+              },
+              {
                 title: "Wednesday Ministers Class",
                 date: "Every Wednesday",
                 time: "8:00 PM",
