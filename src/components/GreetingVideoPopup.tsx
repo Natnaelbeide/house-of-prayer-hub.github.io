@@ -17,7 +17,11 @@ const COOLDOWN_MS = 24 * 60 * 60 * 1000; // once a day
 const LATEST_VIDEO_SRC =
   "https://www.youtube.com/embed/videoseries?list=UUjokQ06rjxq7k2nFf9NiMNw&rel=0";
 
-export default function GreetingVideoPopup() {
+export default function GreetingVideoPopup({
+  onDismiss,
+}: {
+  onDismiss?: () => void;
+}) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
