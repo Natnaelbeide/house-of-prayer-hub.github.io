@@ -32,6 +32,13 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
+                title: "Upcoming Conference",
+                date: "November 6-8",
+                time: "TBA",
+                desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
+                highlight: true,
+              },
+              {
                 title: "Wednesday Ministers Class",
                 date: "Every Wednesday",
                 time: "8:00 PM",
@@ -52,16 +59,29 @@ export default function Announcements() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="group bg-card rounded-2xl p-6 sm:p-8 shadow-card border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
+                className={`group rounded-2xl p-6 sm:p-8 shadow-card border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 ${
+                  item.highlight
+                    ? "bg-accent/5 border-accent"
+                    : "bg-card border-border"
+                }`}
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${
+                    item.highlight ? "bg-accent/20" : "bg-accent/10"
+                  }`}>
                     <Megaphone size={22} className="text-accent" />
                   </div>
                   <div className="flex-1">
-                    <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">
-                      {item.title}
-                    </h2>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground">
+                        {item.title}
+                      </h2>
+                      {item.highlight && (
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-accent text-primary-foreground">
+                          New
+                        </span>
+                      )}
+                    </div>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
                       <span className="inline-flex items-center gap-1.5">
                         <Calendar size={14} className="text-accent" /> {item.date}
