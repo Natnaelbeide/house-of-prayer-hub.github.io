@@ -31,6 +31,7 @@ function useParallax() {
 }
 
 export default function Index() {
+  const [greetingDone, setGreetingDone] = useState(false);
   const { bgRef, contentRef } = useParallax();
   const serviceRef = useScrollReveal();
   const locationRef = useScrollReveal();
