@@ -28,15 +28,20 @@ export default function GreetingVideoPopup({
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const seenAt = Number(raw);
-      if (!Number.isNaN(seenAt) && Date.now() - seenAt < COOLDOWN_MS) return;
+      if (!Number.isNaN(seenAt) && Date.now() - seenAt < COOLDOWN_MS) {
+        onDismiss?.();
+        return;
+      }
     }
     const timer = setTimeout(() => setOpen(true), SHOW_DELAY_MS);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleClose = () => {
     setOpen(false);
     localStorage.setItem(STORAGE_KEY, String(Date.now()));
+    onDismiss?.();
   };
 
   return (
