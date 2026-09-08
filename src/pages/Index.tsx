@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Heart, ChevronRight, Youtube, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
