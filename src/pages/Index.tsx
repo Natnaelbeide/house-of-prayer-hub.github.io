@@ -176,7 +176,7 @@ export default function Index() {
             <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mt-4" />
           </div>
           <p className="text-center text-muted-foreground mb-10 max-w-lg mx-auto text-lg">
-            Catch up on sermons and worship from Pastor Henok Habte on our YouTube channel.
+            Catch up on sermons and worship from Apostle Henok Habte on our YouTube channel.
           </p>
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-elevated border border-border aspect-video mb-8">

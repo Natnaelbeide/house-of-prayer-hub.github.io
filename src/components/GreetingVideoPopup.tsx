@@ -53,7 +53,7 @@ export default function GreetingVideoPopup({
               Welcome to House of Prayer Church DMV
             </DialogTitle>
             <DialogDescription className="text-center text-primary-foreground/80">
-              A greeting from Pastor Henok Habte — our latest message.
+              A greeting from Apostle Henok Habte — our latest message.
             </DialogDescription>
           </DialogHeader>
         </div>
