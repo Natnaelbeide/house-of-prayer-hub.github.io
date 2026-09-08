@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Heart, ChevronRight, Youtube, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import UpcomingPopup from "@/components/UpcomingPopup";
+import GreetingVideoPopup from "@/components/GreetingVideoPopup";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -30,6 +31,7 @@ function useParallax() {
 }
 
 export default function Index() {
+  const [greetingDone, setGreetingDone] = useState(false);
   const { bgRef, contentRef } = useParallax();
   const serviceRef = useScrollReveal();
   const locationRef = useScrollReveal();
@@ -228,7 +230,8 @@ export default function Index() {
         </div>
       </section>
 
-      <UpcomingPopup />
+      <GreetingVideoPopup onDismiss={() => setGreetingDone(true)} />
+      {greetingDone && <UpcomingPopup />}
     </Layout>
   );
 }
