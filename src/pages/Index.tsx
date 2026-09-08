@@ -230,7 +230,8 @@ export default function Index() {
         </div>
       </section>
 
-      <UpcomingPopup />
+      <GreetingVideoPopup onDismiss={() => setGreetingDone(true)} />
+      {greetingDone && <UpcomingPopup />
     </Layout>
   );
 }
