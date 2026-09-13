@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
