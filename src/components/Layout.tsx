@@ -122,7 +122,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             <div>
               <h4 className="font-heading font-bold mb-3">Service Times</h4>
-              <p className="text-sm opacity-80">Friday Night — 6:30 PM</p>
+              <p className="text-sm opacity-80">Friday Night Prayer — 6:30 PM</p>
               <p className="text-sm opacity-80">Sunday — 3:30 PM</p>
             </div>
             <div>

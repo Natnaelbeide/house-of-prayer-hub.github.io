@@ -108,7 +108,7 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { day: "Friday Night", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
+              { day: "Friday Night Prayer", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
               { day: "Sunday", time: "3:30 PM", icon: "☀️", desc: "Main Service" },
               { day: "Wednesday Ministers Class", time: "8:00 PM", icon: "💻", desc: "Teaching How to Be a Servant of God" },
             ].map((s) => (

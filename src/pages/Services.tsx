@@ -32,7 +32,7 @@ export default function Services() {
         <div ref={cardsRef} className="container px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { day: "Friday Night Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
+              { day: "Friday Night Prayer Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
               { day: "Sunday Service", time: "3:30 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
               { day: "Wednesday Ministers Class", time: "8:00 PM", desc: "Weekly Zoom class teaching how to be a servant of God.", icon: "💻" },
             ].map((s) => (

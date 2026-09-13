@@ -43,7 +43,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
   },
   {
     id: "friday-night",
-    title: "Friday Night Service",
+    title: "Friday Night Prayer Service",
     date: "Every Friday",
     time: "6:30 PM",
     description: "Evening of prayer, worship, and the Word.",
