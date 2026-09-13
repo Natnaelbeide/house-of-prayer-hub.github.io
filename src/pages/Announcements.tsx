@@ -39,6 +39,13 @@ export default function Announcements() {
                 highlight: true,
               },
               {
+                title: "School of Ministry — Bible School",
+                date: "Registration open",
+                time: "Schedule announced soon",
+                desc: "Enroll in our Bible school to study the Word and be equipped for ministry. Register using the form below.",
+                highlight: true,
+              },
+              {
                 title: "Wednesday Ministers Class",
                 date: "Every Wednesday",
                 time: "8:00 PM",
