@@ -104,6 +104,10 @@ export default function Announcements() {
             ))}
           </div>
 
+          <div id="school-of-ministry" className="max-w-3xl mx-auto mt-12 scroll-mt-24">
+            <MinistryRegistrationForm />
+          </div>
+
           <div className="mt-14 text-center max-w-xl mx-auto">
             <p className="text-muted-foreground mb-6">
               Have a question or want to share an announcement? Reach out to the church office.
