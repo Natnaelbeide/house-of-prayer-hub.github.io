@@ -1,0 +1,31 @@
+{
+  "name": "House of Prayer Church DMV",
+  "short_name": "House of Prayer",
+  "description": "Foundation of the Apostles and Prophets — House of Prayer Church DMV: services, announcements, Bible lessons and the 90-Day Bible Reading Tracker.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1B2A6B",
+  "theme_color": "#1B2A6B",
+  "icons": [
+    {
+      "src": "/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
