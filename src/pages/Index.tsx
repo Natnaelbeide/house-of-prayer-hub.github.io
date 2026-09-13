@@ -213,8 +213,8 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
-              { method: "Zelle", number: "319-330-4590" },
-              { method: "CashApp", number: "319-330-4590" },
+              { method: "Zelle", number: "8329281170" },
+              { method: "CashApp", number: "8329281170" },
             ].map((g) => (
               <div key={g.method} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                 <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
