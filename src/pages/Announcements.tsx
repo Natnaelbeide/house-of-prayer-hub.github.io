@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -36,6 +37,13 @@ export default function Announcements() {
                 date: "November 6-8",
                 time: "TBA",
                 desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
+                highlight: true,
+              },
+              {
+                title: "School of Ministry — Bible School",
+                date: "Registration open",
+                time: "Schedule announced soon",
+                desc: "Enroll in our Bible school to study the Word and be equipped for ministry. Register using the form below.",
                 highlight: true,
               },
               {
@@ -95,6 +103,10 @@ export default function Announcements() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div id="school-of-ministry" className="max-w-3xl mx-auto mt-12 scroll-mt-24">
+            <MinistryRegistrationForm />
           </div>
 
           <div className="mt-14 text-center max-w-xl mx-auto">
