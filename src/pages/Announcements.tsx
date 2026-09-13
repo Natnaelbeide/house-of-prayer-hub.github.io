@@ -59,7 +59,7 @@ export default function Announcements() {
                 desc: "Come worship with us at 3846 King St, Alexandria, VA. Visitors and new families are always welcome.",
               },
               {
-                title: "Friday Night Service",
+                title: "Friday Night Prayer Service",
                 date: "Every Friday",
                 time: "6:30 PM",
                 desc: "An evening of prayer, worship, and the Word. Join us in person or watch live on YouTube.",
