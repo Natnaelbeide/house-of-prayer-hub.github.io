@@ -32,8 +32,8 @@ export default function Giving() {
         <div ref={cardsRef} className="container px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
-              { method: "Zelle", number: "319-330-4590", desc: "Send directly via your bank's Zelle service.", icon: Gift },
-              { method: "CashApp", number: "319-330-4590", desc: "Send via CashApp using the number below.", icon: HandHeart },
+              { method: "Zelle", number: "8329281170", desc: "Send directly via your bank's Zelle service.", icon: Gift },
+              { method: "CashApp", number: "8329281170", desc: "Send via CashApp using the number below.", icon: HandHeart },
             ].map((g) => (
               <div
                 key={g.method}
