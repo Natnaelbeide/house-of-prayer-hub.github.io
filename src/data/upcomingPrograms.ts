@@ -11,7 +11,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-09-14-v1";
+export const POPUP_VERSION = "2026-09-14-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -20,6 +20,15 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "September 28 – October 3",
     time: "TBA",
     description: "Join us for a special time of fasting and prayer as we seek God together as a church family.",
+    location: "3846 King St, Alexandria, VA",
+    isNew: true,
+  },
+  {
+    id: "worship-healing-conference",
+    title: "Worship and Healing Conference",
+    date: "October 4",
+    time: "3:00 PM",
+    description: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
     location: "3846 King St, Alexandria, VA",
     isNew: true,
   },

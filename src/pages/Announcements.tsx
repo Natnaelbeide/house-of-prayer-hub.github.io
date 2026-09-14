@@ -40,6 +40,13 @@ export default function Announcements() {
                 highlight: true,
               },
               {
+                title: "Worship and Healing Conference",
+                date: "October 4",
+                time: "3:00 PM",
+                desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
+                highlight: true,
+              },
+              {
                 title: "Upcoming Conference",
                 date: "November 6-8",
                 time: "TBA",
