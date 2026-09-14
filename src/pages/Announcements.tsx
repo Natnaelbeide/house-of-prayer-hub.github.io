@@ -33,6 +33,13 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
+                title: "Fasting and Prayer Program",
+                date: "September 28 – October 3",
+                time: "TBA",
+                desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
+                highlight: true,
+              },
+              {
                 title: "Upcoming Conference",
                 date: "November 6-8",
                 time: "TBA",
