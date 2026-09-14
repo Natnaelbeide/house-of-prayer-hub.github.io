@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { MapPin, Mail, ChevronRight, Youtube, Facebook, Instagram } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -15,6 +16,7 @@ export default function Connect() {
 
   return (
     <Layout>
+      <Seo title="Connect With Us | House of Prayer Church DMV" description="Visit House of Prayer Church DMV at 3846 King St, Alexandria, VA. Get directions, email us or follow us on YouTube, Facebook and TikTok." path="/connect" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">

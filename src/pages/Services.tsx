@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Clock, BookOpen, Users, Music } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -8,6 +9,7 @@ export default function Services() {
 
   return (
     <Layout>
+      <Seo title="Service Times | House of Prayer Church DMV" description="Join us Friday 6:30 PM for prayer, Sunday 3:30 PM for worship, and Wednesday 8:00 PM online ministers class in Alexandria, VA." path="/services" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">

@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Heart, Gift, HandHeart } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -8,6 +9,7 @@ export default function Giving() {
 
   return (
     <Layout>
+      <Seo title="Giving | House of Prayer Church DMV" description="Support the ministry of House of Prayer Church DMV through Zelle or CashApp. Every gift helps our prayer and outreach work." path="/giving" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { readingPlan } from "@/data/readingPlan";
 import { Check, BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -61,6 +62,7 @@ export default function BibleTracker() {
 
   return (
     <Layout>
+      <Seo title="90-Day Bible Reading Tracker | House of Prayer Church DMV" description="Read the whole Bible in 90 days with our day-by-day plan. Track your progress, add notes and finish the journey with the church." path="/bible-tracker" />
       <section className="py-12 bg-background">
         <div className="container px-4 max-w-2xl">
           <h1 className="font-heading text-3xl sm:text-4xl font-bold text-center text-foreground mb-2">

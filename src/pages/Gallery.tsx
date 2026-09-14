@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Camera } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -7,6 +8,7 @@ export default function Gallery() {
 
   return (
     <Layout>
+      <Seo title="Gallery | House of Prayer Church DMV" description="Photos from worship services, conferences and church life at House of Prayer Church DMV in Alexandria, VA." path="/gallery" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">

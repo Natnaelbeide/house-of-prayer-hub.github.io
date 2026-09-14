@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
@@ -9,6 +10,7 @@ export default function Announcements() {
 
   return (
     <Layout>
+      <Seo title="Announcements & Events | House of Prayer Church DMV" description="Upcoming conferences, fasting and prayer programs, and School of Ministry Bible school registration at House of Prayer Church DMV." path="/announcements" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">
