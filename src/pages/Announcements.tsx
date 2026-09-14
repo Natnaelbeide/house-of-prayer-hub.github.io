@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
+import AnnouncementAudio from "@/components/AnnouncementAudio";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -113,6 +114,12 @@ export default function Announcements() {
                       </span>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                    {item.highlight && (
+                      <AnnouncementAudio
+                        text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
+                        label="Listen to this announcement"
+                      />
+                    )}
                   </div>
                 </div>
               </div>
