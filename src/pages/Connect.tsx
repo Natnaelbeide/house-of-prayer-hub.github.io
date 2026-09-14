@@ -41,6 +41,7 @@ export default function Connect() {
         <div ref={contactRef} className="container px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             <div className="space-y-6">
+              <h2 className="sr-only">Contact details</h2>
               <div className="bg-card rounded-2xl p-6 shadow-card border border-border flex gap-4 items-start hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <MapPin size={22} className="text-accent" />
