@@ -24,6 +24,15 @@ export const upcomingPrograms: UpcomingProgram[] = [
     isNew: true,
   },
   {
+    id: "worship-healing-conference",
+    title: "Worship and Healing Conference",
+    date: "October 4",
+    time: "3:00 PM",
+    description: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
+    location: "3846 King St, Alexandria, VA",
+    isNew: true,
+  },
+  {
     id: "upcoming-conference",
     title: "Upcoming Conference",
     date: "November 6-8",
