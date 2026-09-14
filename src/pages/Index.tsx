@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Heart, ChevronRight, Youtube, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import UpcomingPopup from "@/components/UpcomingPopup";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
@@ -38,12 +39,13 @@ export default function Index() {
 
   return (
     <Layout>
+      <Seo title="House of Prayer Church DMV | FAPIM Alexandria, VA" description="Worship with House of Prayer Church DMV in Alexandria, VA. Sunday 3:30 PM, Friday night prayer 6:30 PM, Wednesday ministers class online." path="/" />
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
           ref={bgRef}
           src={heroBg}
-          alt=""
+          alt="Congregation gathering for worship at House of Prayer Church DMV in Alexandria, Virginia"
           className="absolute inset-0 w-full h-full object-cover scale-110 will-change-transform"
           width={1920}
           height={1080}

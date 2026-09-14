@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
@@ -9,6 +10,7 @@ export default function ChildrenAndYouth() {
 
   return (
     <Layout>
+      <Seo title="Children & Youth Ministry | House of Prayer Church DMV" description="Children, youth and young adult ministry at House of Prayer Church DMV in Alexandria, VA, with Bible lessons and prayer." path="/children-youth" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">
