@@ -1,15 +1,8 @@
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
-import { BookOpen, FileText, ArrowLeft } from "lucide-react";
+import { ArrowLeft, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import faithWorksI from "@/assets/FaithWorks_I.pdf.asset.json";
-import faithWorksIII from "@/assets/FaithWorks_III.pdf.asset.json";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
-const lessons = [
-  { title: "FaithWorks I", desc: "Foundational lessons for growing in faith.", url: faithWorksI.url },
-  { title: "FaithWorks III", desc: "Continuing the journey — deeper walk with Christ.", url: faithWorksIII.url },
-];
 
 export default function BibleLessons() {
   const listRef = useScrollReveal();
