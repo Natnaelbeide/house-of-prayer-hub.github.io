@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
-import { Users, BookOpen, Heart, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Users, Heart, Sparkles } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ChildrenAndYouth() {
