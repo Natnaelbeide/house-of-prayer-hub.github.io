@@ -1,22 +1,15 @@
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
-import { BookOpen, FileText, ArrowLeft } from "lucide-react";
+import { ArrowLeft, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import faithWorksI from "@/assets/FaithWorks_I.pdf.asset.json";
-import faithWorksIII from "@/assets/FaithWorks_III.pdf.asset.json";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
-const lessons = [
-  { title: "FaithWorks I", desc: "Foundational lessons for growing in faith.", url: faithWorksI.url },
-  { title: "FaithWorks III", desc: "Continuing the journey — deeper walk with Christ.", url: faithWorksIII.url },
-];
 
 export default function BibleLessons() {
   const listRef = useScrollReveal();
 
   return (
     <Layout>
-      <Seo title="Bible Lessons | House of Prayer Church DMV" description="Free FaithWorks Bible lesson booklets for children and youth at House of Prayer Church DMV in Alexandria, VA." path="/children-youth/bible-lessons" />
+      <Seo title="Bible Lessons | House of Prayer Church DMV" description="Bible lesson materials for children and youth at House of Prayer Church DMV in Alexandria, VA." path="/children-youth/bible-lessons" />
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(40_60%_50%/0.2),transparent_60%)]" />
@@ -40,25 +33,14 @@ export default function BibleLessons() {
           <Link to="/children-youth" className="inline-flex items-center gap-2 text-accent hover:underline mb-8">
             <ArrowLeft size={16} /> Back to Children & Youth
           </Link>
-          <div className="grid gap-5">
-            {lessons.map((lesson) => (
-              <a
-                key={lesson.title}
-                href={lesson.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-5 bg-card rounded-2xl p-6 shadow-card border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
-                  <FileText size={26} className="text-accent" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-1">{lesson.title}</h3>
-                  <p className="text-muted-foreground text-sm">{lesson.desc}</p>
-                </div>
-                <BookOpen size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-              </a>
-            ))}
+          <div className="bg-card rounded-2xl p-10 shadow-card border border-border text-center">
+            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-5">
+              <Clock size={32} className="text-accent" />
+            </div>
+            <h3 className="font-heading text-2xl font-semibold text-foreground mb-2">Lessons Coming Soon</h3>
+            <p className="text-muted-foreground max-w-md mx-auto">
+              New Bible lesson materials for children, youth, and families are being prepared. Check back soon!
+            </p>
           </div>
         </div>
       </section>
