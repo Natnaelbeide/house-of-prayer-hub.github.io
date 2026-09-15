@@ -50,32 +50,19 @@ export default function ChildrenAndYouth() {
             <h2 className="font-heading text-4xl font-bold text-foreground">What We Offer</h2>
             <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
-              { icon: BookOpen, title: "Bible Lessons", desc: "Age-appropriate Scripture teaching for kids and teens.", to: "/children-youth/bible-lessons" },
               { icon: Users, title: "Mentorship", desc: "Guidance and discipleship from caring adult leaders." },
               { icon: Heart, title: "Fellowship", desc: "Games, activities, and events that build lasting friendships." },
-            ].map((item) => {
-              const content = (
-                <>
-                  <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                    <item.icon size={26} className="text-accent" />
-                  </div>
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                </>
-              );
-              const className = "group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300";
-              return item.to ? (
-                <Link key={item.title} to={item.to} className={className}>
-                  {content}
-                </Link>
-              ) : (
-                <div key={item.title} className={className}>
-                  {content}
+            ].map((item) => (
+              <div key={item.title} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                  <item.icon size={26} className="text-accent" />
                 </div>
-              );
-            })}
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
