@@ -9,7 +9,7 @@ export default function BibleLessons() {
 
   return (
     <Layout>
-      <Seo title="Bible Lessons | House of Prayer Church DMV" description="Free FaithWorks Bible lesson booklets for children and youth at House of Prayer Church DMV in Alexandria, VA." path="/children-youth/bible-lessons" />
+      <Seo title="Bible Lessons | House of Prayer Church DMV" description="Bible lesson materials for children and youth at House of Prayer Church DMV in Alexandria, VA." path="/children-youth/bible-lessons" />
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(40_60%_50%/0.2),transparent_60%)]" />
