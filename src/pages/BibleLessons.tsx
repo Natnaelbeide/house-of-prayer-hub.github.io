@@ -33,25 +33,14 @@ export default function BibleLessons() {
           <Link to="/children-youth" className="inline-flex items-center gap-2 text-accent hover:underline mb-8">
             <ArrowLeft size={16} /> Back to Children & Youth
           </Link>
-          <div className="grid gap-5">
-            {lessons.map((lesson) => (
-              <a
-                key={lesson.title}
-                href={lesson.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-5 bg-card rounded-2xl p-6 shadow-card border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
-                  <FileText size={26} className="text-accent" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-1">{lesson.title}</h3>
-                  <p className="text-muted-foreground text-sm">{lesson.desc}</p>
-                </div>
-                <BookOpen size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-              </a>
-            ))}
+          <div className="bg-card rounded-2xl p-10 shadow-card border border-border text-center">
+            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-5">
+              <Clock size={32} className="text-accent" />
+            </div>
+            <h3 className="font-heading text-2xl font-semibold text-foreground mb-2">Lessons Coming Soon</h3>
+            <p className="text-muted-foreground max-w-md mx-auto">
+              New Bible lesson materials for children, youth, and families are being prepared. Check back soon!
+            </p>
           </div>
         </div>
       </section>
