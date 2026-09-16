@@ -95,7 +95,7 @@ export default function Announcements() {
                 date: "Every Friday",
                 time: "6:30 PM",
                 desc: "An evening of prayer, worship, and the Word. Join us in person or watch live on YouTube.",
-                descTi: "ምሸት ጸሎት፡ ኣምልኾን ቃል ኣምላኽን። ብኣካል ወይ ብYouTube ብቐጥታ ተሓወሱና።",
+                descTi: "ኩሉ ግዜ ዓርቢ ፡ ናይ ጸሎትን፡ ኣምልኾን ቃል ኣምላኽን።",
               },
 
             ].map((item) => (
