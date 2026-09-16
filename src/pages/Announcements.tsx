@@ -23,6 +23,8 @@ export default function Announcements() {
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             Announcements
           </h1>
+          <p className="text-primary-foreground/90 text-lg mb-2" lang="ti">መልእኽትታትን መደባትን</p>
+
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6 animate-fade-in-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }} />
           <p className="text-primary-foreground/80 max-w-xl mx-auto text-lg animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
             Latest updates, events, and important news from House of Prayer Church DMV.
@@ -37,50 +39,65 @@ export default function Announcements() {
             {[
               {
                 title: "Fasting and Prayer Program",
+                titleTi: "ጾምን ጸሎትን መደብ",
                 date: "September 28 – October 3",
                 time: "TBA",
                 desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
+                descTi: "ብሓባር ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ጾምን ጸሎትን ተሓወሱና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
                 highlight: true,
               },
               {
                 title: "Worship and Healing Conference",
+                titleTi: "ጉባኤ ኣምልኾን ፈውስን",
                 date: "October 4",
                 time: "3:00 PM",
                 desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
+                descTi: "ሓያል ምሸት ኣምልኾን ፈውስን። ህላወን ንኪድን ኣምላኽ ተጸቢኹም ንዑ።",
                 highlight: true,
               },
               {
                 title: "Upcoming Conference",
+                titleTi: "ዝመጽእ ጉባኤ",
                 date: "November 6-8",
                 time: "TBA",
                 desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
+                descTi: "ምስ ፍሉይ ጋሻን ንመንእሰያትን ንኣባጽሕን ዝተዳለወ ፍሉይ ጸሎትን ዝሓወሰ ሓያል ጉባኤ። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
                 highlight: true,
               },
               {
                 title: "School of Ministry — Bible School",
+                titleTi: "ቤት ትምህርቲ ኣገልግሎት — መጽሓፍ ቅዱስ",
                 date: "Registration open",
                 time: "Schedule announced soon",
                 desc: "Enroll in our Bible school to study the Word and be equipped for ministry. Register using the form below.",
+                descTi: "ቃል ኣምላኽ ንምምሃርን ንኣገልግሎት ንምዕጣቕን ተመዝገቡ። ኣብ ታሕቲ ዘሎ ቅጥዒ ተጠቐሙ።",
                 highlight: true,
               },
               {
                 title: "Wednesday Ministers Class",
+                titleTi: "ናይ ረቡዕ ትምህርቲ ኣገልገልቲ",
                 date: "Every Wednesday",
                 time: "8:00 PM",
                 desc: "Join our weekly Zoom class teaching how to be a servant of God. All ministers and leaders are encouraged to attend.",
+                descTi: "ኣገልጋሊ ኣምላኽ ከመይ ትኸውን ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ። ኩሎም ኣገልገልትን መራሕትን ክሳተፉ ንዕድም።",
               },
               {
                 title: "Sunday Service",
+                titleTi: "ናይ ሰንበት ኣገልግሎት",
                 date: "Every Sunday",
                 time: "3:30 PM",
                 desc: "Come worship with us at 3846 King St, Alexandria, VA. Visitors and new families are always welcome.",
+                descTi: "ኣብ 3846 King St, Alexandria, VA ምሳና ኣምልኹ። ሓደስቲ ኣጋይሽን ስድራቤታትን ኩሉ ግዜ እንቋዕ ደሓን መጻእኩም።",
               },
               {
                 title: "Friday Night Prayer Service",
+                titleTi: "ናይ ዓርቢ ምሸት ጸሎት",
                 date: "Every Friday",
                 time: "6:30 PM",
                 desc: "An evening of prayer, worship, and the Word. Join us in person or watch live on YouTube.",
+                descTi: "ምሸት ጸሎት፡ ኣምልኾን ቃል ኣምላኽን። ብኣካል ወይ ብYouTube ብቐጥታ ተሓወሱና።",
               },
+
             ].map((item) => (
               <div
                 key={item.title}
@@ -107,6 +124,7 @@ export default function Announcements() {
                         </span>
                       )}
                     </div>
+                    <p className="text-accent font-semibold mb-2" lang="ti">{item.titleTi}</p>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
                       <span className="inline-flex items-center gap-1.5">
                         <Calendar size={14} className="text-accent" /> {item.date}
@@ -116,6 +134,8 @@ export default function Announcements() {
                       </span>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
+
                     {item.highlight && (
                       <AnnouncementAudio
                         text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
