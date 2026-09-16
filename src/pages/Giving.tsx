@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
+import PrayerRequestForm from "@/components/PrayerRequestForm";
 import { Heart, Gift, HandHeart } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -50,6 +51,12 @@ export default function Giving() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-background">
+        <div className="container px-4">
+          <PrayerRequestForm />
         </div>
       </section>
 

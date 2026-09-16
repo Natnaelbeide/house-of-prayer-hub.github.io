@@ -41,6 +41,39 @@ export type Database = {
         }
         Relationships: []
       }
+      prayer_requests: {
+        Row: {
+          created_at: string
+          email: string | null
+          follow_up_requested: boolean
+          full_name: string
+          id: string
+          is_private: boolean
+          phone: string | null
+          request: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          follow_up_requested?: boolean
+          full_name: string
+          id?: string
+          is_private?: boolean
+          phone?: string | null
+          request: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          follow_up_requested?: boolean
+          full_name?: string
+          id?: string
+          is_private?: boolean
+          phone?: string | null
+          request?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
