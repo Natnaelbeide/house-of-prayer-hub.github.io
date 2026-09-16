@@ -123,11 +123,24 @@ export default function UpcomingPopup() {
 
           <div className="space-y-3 p-5">
             <div className="flex items-start justify-between gap-4">
-              <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
+              <div>
+                <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
+                {program.titleTi && (
+                  <p className="mt-0.5 text-sm font-medium text-foreground/80" lang="ti">
+                    {program.titleTi}
+                  </p>
+                )}
+              </div>
               <span className="shrink-0 text-xs font-medium text-muted-foreground">
                 {activeIndex + 1} / {upcomingPrograms.length}
               </span>
             </div>
+            <p className="text-sm text-muted-foreground">{program.description}</p>
+            {program.descriptionTi && (
+              <p className="text-sm text-muted-foreground/90" lang="ti">
+                {program.descriptionTi}
+              </p>
+            )}
             <div className="space-y-1.5 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar size={15} className="shrink-0 text-accent" />
