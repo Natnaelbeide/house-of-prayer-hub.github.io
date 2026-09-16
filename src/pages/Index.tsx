@@ -95,6 +95,12 @@ export default function Index() {
             >
               <BookOpen size={20} /> 90-Day Bible Reading Tracker
             </Link>
+            <Link
+              to="/how-to-read-the-bible-in-90-days"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-primary-foreground/40 text-primary-foreground font-medium hover:bg-primary-foreground/10 transition-colors text-lg"
+            >
+              <BookOpen size={20} /> How to Read in 90 Days
+            </Link>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
