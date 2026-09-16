@@ -43,7 +43,7 @@ export default function Announcements() {
                 date: "September 28 – October 3",
                 time: "TBA",
                 desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
-                descTi: "ብሓባር ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ጾምን ጸሎትን ተሓወሱና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
+                descTi: "ብሓባር ገጽ ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ናይ ጾምን ጸሎትን ግዜ ሕበሩና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
                 highlight: true,
               },
               {
