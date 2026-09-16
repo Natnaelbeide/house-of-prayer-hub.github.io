@@ -33,6 +33,7 @@ const navLinks = [
   { to: "/giving", label: "Giving" },
   { to: "/gallery", label: "Gallery" },
   { to: "/connect", label: "Connect" },
+  { to: "/how-to-read-the-bible-in-90-days", label: "90-Day Guide" },
   { to: "/bible-tracker", label: "Bible Reading Tracker" },
 ];
 

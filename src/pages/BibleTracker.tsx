@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
 import { readingPlan } from "@/data/readingPlan";
@@ -71,6 +72,11 @@ export default function BibleTracker() {
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6" />
           <p className="text-center text-muted-foreground mb-8">
             Read through the entire Bible in 90 days. Track your progress below.
+          </p>
+          <p className="text-center mb-8">
+            <Link to="/how-to-read-the-bible-in-90-days" className="text-primary font-semibold underline underline-offset-4 hover:text-accent transition-colors">
+              Read the three-times-daily guide
+            </Link>
           </p>
 
           {/* Progress Bar */}
