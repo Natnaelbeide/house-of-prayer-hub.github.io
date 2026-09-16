@@ -94,7 +94,7 @@ export default function Announcements() {
                 titleTi: "ናይ ዓርቢ ምሸት ጸሎት",
                 date: "Every Friday",
                 time: "6:30 PM",
-                desc: "An evening of prayer, worship, and the Word. Join us in person or watch live on YouTube.",
+                desc: "An evening of prayer, worship, and the Word. Join us in person.",
                 descTi: "ኩሉ ግዜ ዓርቢ ፡ ናይ ጸሎትን፡ ኣምልኾን ቃል ኣምላኽን።",
               },
 
