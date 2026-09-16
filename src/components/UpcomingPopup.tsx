@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Calendar, Clock, MapPin, X, Sparkles } from "lucide-react";
+import { Calendar, ChevronLeft, ChevronRight, Clock, MapPin, Sparkles, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -22,7 +22,9 @@ interface PopupState {
 
 export default function UpcomingPopup() {
   const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
   const autoDismissRef = useRef<NodeJS.Timeout | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const hasPrograms = upcomingPrograms.length > 0;
 
@@ -67,12 +69,21 @@ export default function UpcomingPopup() {
     );
   };
 
+  const showProgram = (index: number) => {
+    videoRef.current?.pause();
+    setActiveIndex(index);
+  };
+
   if (!hasPrograms) return null;
+
+  const program = upcomingPrograms[activeIndex];
+  if (!program) return null;
+  const hasMultiplePrograms = upcomingPrograms.length > 1;
 
   return (
     <Dialog open={open} onOpenChange={(isOpen) => !isOpen && handleClose()}>
-      <DialogContent className="sm:max-w-md border-accent/30 bg-card p-0 overflow-hidden">
-        <div className="bg-gradient-navy p-6 text-primary-foreground">
+      <DialogContent className="w-[calc(100vw-1.5rem)] max-w-lg border-accent/30 bg-card p-0 overflow-hidden">
+        <div className="bg-gradient-navy px-5 py-4 text-primary-foreground">
           <DialogHeader>
             <div className="flex items-center justify-center gap-2 mb-2">
               <Sparkles className="text-accent" size={22} />
@@ -84,78 +95,117 @@ export default function UpcomingPopup() {
             <DialogTitle className="text-center font-heading text-2xl text-primary-foreground">
               House of Prayer Church DMV
             </DialogTitle>
-            <DialogDescription className="text-center text-primary-foreground/80">
-              New programs and events you do not want to miss.
-            </DialogDescription>
+            <DialogDescription className="sr-only">Video announcements for upcoming church events.</DialogDescription>
           </DialogHeader>
         </div>
 
-        <div className="p-6 pt-4 space-y-4 max-h-[60vh] overflow-y-auto">
-          {upcomingPrograms.map((program) => (
-            <div
+        <div className="max-h-[68vh] overflow-y-auto">
+          <div className="relative aspect-video bg-primary">
+            <video
               key={program.id}
-              className="relative rounded-xl border border-border bg-muted/40 p-4 hover:bg-muted transition-colors"
-            >
-              {program.isNew && (
-                <span className="absolute -top-2 -right-2 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-xs font-semibold text-accent-foreground shadow-gold">
-                  New
-                </span>
-              )}
-              <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                {program.title}
-              </h3>
-              <div className="space-y-1 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Calendar size={14} className="text-accent" />
-                  <span>{program.date}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock size={14} className="text-accent" />
-                  <span>{program.time}</span>
-                </div>
-                {program.location && (
-                  <div className="flex items-center gap-2">
-                    <MapPin size={14} className="text-accent" />
-                    <span>{program.location}</span>
-                  </div>
-                )}
+              ref={videoRef}
+              src={program.videoUrl}
+              className="h-full w-full object-cover"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={`${program.title} video announcement`}
+            />
+            {program.isNew && (
+              <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-xs font-semibold text-accent-foreground shadow-gold">
+                New
+              </span>
+            )}
+          </div>
+
+          <div className="space-y-3 p-5">
+            <div className="flex items-start justify-between gap-4">
+              <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
+              <span className="shrink-0 text-xs font-medium text-muted-foreground">
+                {activeIndex + 1} / {upcomingPrograms.length}
+              </span>
+            </div>
+            <div className="space-y-1.5 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Calendar size={15} className="shrink-0 text-accent" />
+                <span>{program.date}</span>
               </div>
-              <p className="mt-2 text-sm text-foreground/90 leading-relaxed">
-                {program.description}
-              </p>
-              {program.link && (
-                <a
-                  href={program.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center text-sm font-medium text-accent hover:underline"
-                >
-                  Learn more
-                </a>
+              <div className="flex items-center gap-2">
+                <Clock size={15} className="shrink-0 text-accent" />
+                <span>{program.time}</span>
+              </div>
+              {program.location && (
+                <div className="flex items-start gap-2">
+                  <MapPin size={15} className="mt-0.5 shrink-0 text-accent" />
+                  <span>{program.location}</span>
+                </div>
               )}
             </div>
-          ))}
+            {program.link && (
+              <Button asChild variant="outline" className="w-full border-accent text-foreground">
+                <a href={program.link}>Registration & details</a>
+              </Button>
+            )}
+
+            {hasMultiplePrograms && (
+              <div className="flex items-center justify-between gap-3 border-t border-border pt-3">
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => showProgram((activeIndex - 1 + upcomingPrograms.length) % upcomingPrograms.length)}
+                  aria-label="Previous announcement"
+                >
+                  <ChevronLeft />
+                </Button>
+                <div className="flex items-center justify-center gap-1.5" aria-label="Announcement pages">
+                  {upcomingPrograms.map((item, index) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => showProgram(index)}
+                      className={`h-2.5 w-2.5 rounded-full transition-colors ${index === activeIndex ? "bg-accent" : "bg-muted-foreground/30"}`}
+                      aria-label={`Show ${item.title}`}
+                      aria-current={index === activeIndex ? "true" : undefined}
+                    />
+                  ))}
+                </div>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => showProgram((activeIndex + 1) % upcomingPrograms.length)}
+                  aria-label="Next announcement"
+                >
+                  <ChevronRight />
+                </Button>
+              </div>
+            )}
+          </div>
         </div>
 
-        <div className="p-6 pt-0 flex flex-col gap-3">
+        <div className="px-5 pb-5">
           <Button
             onClick={handleClose}
             className="w-full bg-gradient-gold text-foreground font-semibold hover:opacity-90"
           >
             Got it
           </Button>
-          <p className="text-center text-xs text-muted-foreground">
-            This message will close automatically in a few minutes.
-          </p>
         </div>
 
-        <button
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon"
           onClick={handleClose}
-          className="absolute right-3 top-3 rounded-full p-1.5 text-primary-foreground/80 hover:bg-white/10 hover:text-primary-foreground transition-colors"
+          className="absolute right-2 top-2 text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"
           aria-label="Close popup"
         >
           <X size={18} />
-        </button>
+        </Button>
       </DialogContent>
     </Dialog>
   );
