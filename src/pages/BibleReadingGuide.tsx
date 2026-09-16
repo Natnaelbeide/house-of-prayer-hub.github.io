@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { readingPlan, type ReadingDay } from "@/data/readingPlan";
+import heroBg from "@/assets/hero-bg.jpg";
 import churchPhoto from "@/assets/90-day-bible-guide.jpg.asset.json";
 
 interface ChapterReading {
@@ -97,7 +98,7 @@ export default function BibleReadingGuide() {
       <article className="bg-background">
         <header className="relative min-h-[68vh] flex items-end overflow-hidden">
           <img
-            src={churchPhoto.url}
+            src={heroBg}
             alt="The pulpit and Scripture banners inside House of Prayer Church DMV"
             className="absolute inset-0 h-full w-full object-cover"
             width={1200}
