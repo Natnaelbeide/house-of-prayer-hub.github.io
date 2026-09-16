@@ -1,9 +1,18 @@
+import fastingPrayerVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
+import worshipHealingVideo from "@/assets/announcements/worship-healing.mp4.asset.json";
+import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
+import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
+import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
+import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
+import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
+
 export interface UpcomingProgram {
   id: string;
   title: string;
   date: string;
   time: string;
   description: string;
+  videoUrl: string;
   location?: string;
   link?: string;
   isNew?: boolean;
@@ -11,7 +20,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-09-14-v2";
+export const POPUP_VERSION = "2026-09-16-video-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -20,6 +29,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "September 28 – October 3",
     time: "TBA",
     description: "Join us for a special time of fasting and prayer as we seek God together as a church family.",
+    videoUrl: fastingPrayerVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
   },
@@ -29,6 +39,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "October 4",
     time: "3:00 PM",
     description: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
+    videoUrl: worshipHealingVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
   },
@@ -38,6 +49,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "November 6-8",
     time: "TBA",
     description: "A special guest joins us for a powerful conference with a dedicated prayer session for youth and young adults.",
+    videoUrl: conferenceVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
   },
@@ -47,6 +59,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "Registration open",
     time: "Schedule announced soon",
     description: "Enroll in our Bible school to study the Word and be equipped for ministry. Register on the Announcements page.",
+    videoUrl: schoolOfMinistryVideo.url,
     location: "3846 King St, Alexandria, VA",
     link: "/announcements#school-of-ministry",
     isNew: true,
@@ -57,6 +70,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "Every Sunday",
     time: "3:30 PM",
     description: "Join us for worship, prayer, and the Word.",
+    videoUrl: sundayServiceVideo.url,
     location: "3846 King St, Alexandria, VA",
   },
   {
@@ -65,6 +79,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "Every Friday",
     time: "6:30 PM",
     description: "Evening of prayer, worship, and the Word.",
+    videoUrl: fridayPrayerVideo.url,
     location: "3846 King St, Alexandria, VA",
   },
   {
@@ -73,6 +88,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "Every Wednesday",
     time: "8:00 PM",
     description: "Teaching how to be a servant of God via Zoom.",
+    videoUrl: ministersClassVideo.url,
     location: "Online (Zoom)",
   },
 ];
