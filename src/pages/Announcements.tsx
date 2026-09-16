@@ -37,50 +37,65 @@ export default function Announcements() {
             {[
               {
                 title: "Fasting and Prayer Program",
+                titleTi: "ጾምን ጸሎትን መደብ",
                 date: "September 28 – October 3",
                 time: "TBA",
                 desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
+                descTi: "ብሓባር ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ጾምን ጸሎትን ተሓወሱና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
                 highlight: true,
               },
               {
                 title: "Worship and Healing Conference",
+                titleTi: "ጉባኤ ኣምልኾን ፈውስን",
                 date: "October 4",
                 time: "3:00 PM",
                 desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
+                descTi: "ሓያል ምሸት ኣምልኾን ፈውስን። ህላወን ንኪድን ኣምላኽ ተጸቢኹም ንዑ።",
                 highlight: true,
               },
               {
                 title: "Upcoming Conference",
+                titleTi: "ዝመጽእ ጉባኤ",
                 date: "November 6-8",
                 time: "TBA",
                 desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
+                descTi: "ምስ ፍሉይ ጋሻን ንመንእሰያትን ንኣባጽሕን ዝተዳለወ ፍሉይ ጸሎትን ዝሓወሰ ሓያል ጉባኤ። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
                 highlight: true,
               },
               {
                 title: "School of Ministry — Bible School",
+                titleTi: "ቤት ትምህርቲ ኣገልግሎት — መጽሓፍ ቅዱስ",
                 date: "Registration open",
                 time: "Schedule announced soon",
                 desc: "Enroll in our Bible school to study the Word and be equipped for ministry. Register using the form below.",
+                descTi: "ቃል ኣምላኽ ንምምሃርን ንኣገልግሎት ንምዕጣቕን ተመዝገቡ። ኣብ ታሕቲ ዘሎ ቅጥዒ ተጠቐሙ።",
                 highlight: true,
               },
               {
                 title: "Wednesday Ministers Class",
+                titleTi: "ናይ ረቡዕ ትምህርቲ ኣገልገልቲ",
                 date: "Every Wednesday",
                 time: "8:00 PM",
                 desc: "Join our weekly Zoom class teaching how to be a servant of God. All ministers and leaders are encouraged to attend.",
+                descTi: "ኣገልጋሊ ኣምላኽ ከመይ ትኸውን ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ። ኩሎም ኣገልገልትን መራሕትን ክሳተፉ ንዕድም።",
               },
               {
                 title: "Sunday Service",
+                titleTi: "ናይ ሰንበት ኣገልግሎት",
                 date: "Every Sunday",
                 time: "3:30 PM",
                 desc: "Come worship with us at 3846 King St, Alexandria, VA. Visitors and new families are always welcome.",
+                descTi: "ኣብ 3846 King St, Alexandria, VA ምሳና ኣምልኹ። ሓደስቲ ኣጋይሽን ስድራቤታትን ኩሉ ግዜ እንቋዕ ደሓን መጻእኩም።",
               },
               {
                 title: "Friday Night Prayer Service",
+                titleTi: "ናይ ዓርቢ ምሸት ጸሎት",
                 date: "Every Friday",
                 time: "6:30 PM",
                 desc: "An evening of prayer, worship, and the Word. Join us in person or watch live on YouTube.",
+                descTi: "ምሸት ጸሎት፡ ኣምልኾን ቃል ኣምላኽን። ብኣካል ወይ ብYouTube ብቐጥታ ተሓወሱና።",
               },
+
             ].map((item) => (
               <div
                 key={item.title}
