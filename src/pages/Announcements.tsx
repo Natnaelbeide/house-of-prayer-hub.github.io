@@ -23,6 +23,8 @@ export default function Announcements() {
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             Announcements
           </h1>
+          <p className="text-primary-foreground/90 text-lg mb-2" lang="ti">መልእኽትታትን መደባትን</p>
+
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6 animate-fade-in-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }} />
           <p className="text-primary-foreground/80 max-w-xl mx-auto text-lg animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
             Latest updates, events, and important news from House of Prayer Church DMV.
