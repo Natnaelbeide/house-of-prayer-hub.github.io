@@ -122,6 +122,7 @@ export default function Announcements() {
                         </span>
                       )}
                     </div>
+                    <p className="text-accent font-semibold mb-2" lang="ti">{item.titleTi}</p>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
                       <span className="inline-flex items-center gap-1.5">
                         <Calendar size={14} className="text-accent" /> {item.date}
@@ -131,6 +132,8 @@ export default function Announcements() {
                       </span>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
+
                     {item.highlight && (
                       <AnnouncementAudio
                         text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
