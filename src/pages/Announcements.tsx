@@ -79,7 +79,7 @@ export default function Announcements() {
                 date: "Every Wednesday",
                 time: "8:00 PM",
                 desc: "Join our weekly Zoom class teaching how to be a servant of God. All ministers and leaders are encouraged to attend.",
-                descTi: "ኣገልጋሊ ኣምላኽ ከመይ ትኸውን ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ። ኩሎም ኣገልገልትን መራሕትን ክሳተፉ ንዕድም።",
+                descTi: "ንጎይታ ካብ ምስዓብ ዝወጸ ኣገልግሎትን፡ ኣገልጋሊ ኣምላኽ ከመይ ክኸውን ኣለዎ ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ ኣሎና። ኩሉኹም ኣገልገልቲ ክትሳተፉ ንዕድም።",
               },
               {
                 title: "Sunday Service",
