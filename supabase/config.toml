@@ -1,3 +1,7 @@
 project_id = "gqptheamrtgloosjzmbt"
-[functions.announcement-audio]
-verify_jwt = false
+
+[functions]
+  [functions.announcement-audio]
+    verify_jwt = false
+  [functions.auth-email-hook]
+    verify_jwt = false
