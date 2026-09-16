@@ -52,7 +52,7 @@ export default function Announcements() {
                 date: "October 4",
                 time: "3:00 PM",
                 desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
-                descTi: "ሓያል ምሸት ኣምልኾን ፈውስን። ህላወን ንኪድን ኣምላኽ ተጸቢኹም ንዑ።",
+                descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
                 highlight: true,
               },
               {
