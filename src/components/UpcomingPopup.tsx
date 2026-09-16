@@ -123,12 +123,7 @@ export default function UpcomingPopup() {
 
           <div className="space-y-3 p-5">
             <div className="flex items-start justify-between gap-4">
-              <div>
-                <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
-                <p lang="ti" className="mt-1 text-lg font-semibold leading-snug text-accent">
-                  {program.geezTitle}
-                </p>
-              </div>
+              <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
               <span className="shrink-0 text-xs font-medium text-muted-foreground">
                 {activeIndex + 1} / {upcomingPrograms.length}
               </span>
@@ -149,9 +144,6 @@ export default function UpcomingPopup() {
                 </div>
               )}
             </div>
-            <p lang="ti" className="text-sm leading-relaxed text-foreground/80">
-              {program.geezDescription}
-            </p>
             {program.link && (
               <Button asChild variant="outline" className="w-full border-accent text-foreground">
                 <a href={program.link}>Registration & details</a>
