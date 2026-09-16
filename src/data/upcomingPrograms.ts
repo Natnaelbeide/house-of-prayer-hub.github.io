@@ -9,9 +9,11 @@ import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asse
 export interface UpcomingProgram {
   id: string;
   title: string;
+  titleTi?: string;
   date: string;
   time: string;
   description: string;
+  descriptionTi?: string;
   videoUrl: string;
   location?: string;
   link?: string;
@@ -20,7 +22,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-09-16-video-v1";
+export const POPUP_VERSION = "2026-09-16-video-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
