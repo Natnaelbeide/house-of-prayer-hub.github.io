@@ -44,13 +44,16 @@ export default function ChainPrayer() {
   const [confirmed, setConfirmed] = useState<string | null>(null);
 
   const loadSlots = async () => {
-    const { data, error } = await supabase.functions.invoke("chain-prayer-signup", { method: "GET" });
-    setLoadingSlots(false);
-    if (error) {
-      console.error("Chain prayer slots failed to load", error.message);
-      return;
+    try {
+      const { data, error } = await supabase.functions.invoke("chain-prayer-signup", { method: "GET" });
+      if (error) throw error;
+      setSlots((data?.slots ?? []) as SlotSummary[]);
+    } catch (error) {
+      console.error("Chain prayer slots failed to load", error);
+      setSlots([]);
+    } finally {
+      setLoadingSlots(false);
     }
-    setSlots((data?.slots ?? []) as SlotSummary[]);
   };
 
   useEffect(() => {
