@@ -49,7 +49,7 @@ export default function Announcements() {
               {
                 title: "Worship and Healing Conference",
                 titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
-                date: "October 4",
+                date: "October 18",
                 time: "3:00 PM",
                 desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",

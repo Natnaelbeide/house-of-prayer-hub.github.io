@@ -41,7 +41,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     id: "worship-healing-conference",
     title: "Worship and Healing Conference",
     titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
-    date: "October 4",
+    date: "October 18",
     time: "3:00 PM",
     description: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
     descriptionTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
