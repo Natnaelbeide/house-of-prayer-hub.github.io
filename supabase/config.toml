@@ -11,3 +11,5 @@ project_id = "gqptheamrtgloosjzmbt"
     verify_jwt = false
   [functions.chain-prayer-signup]
     verify_jwt = false
+  [functions.chain-prayer-reminders]
+    verify_jwt = false
