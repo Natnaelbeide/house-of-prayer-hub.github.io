@@ -103,22 +103,12 @@ Deno.serve(async (req) => {
     .single()
 
   if (saveError) {
-    if (saveError.code === '23505' || saveError.code === '23505' || saveError.code === '23514') {
-      return json({ error: 'Invalid sign-up details.' }, 400)
-    }
     if (saveError.code === '23505') {
       return json({ error: 'You already signed up for this hour.' }, 409)
     }
-    if (saveError.code === '23503' || saveError.code === '23514') {
+    if (saveError.code === '23514') {
       return json({ error: 'Invalid sign-up details.' }, 400)
     }
-    if (saveError.code === '23505') return json({ error: 'You already signed up for this hour.' }, 409)
-    if (saveError.code === '23P01' || saveError.code === '23505') {
-      return json({ error: 'You already signed up for this hour.' }, 409)
-    }
-    if (saveError.code === '23505') return json({ error: 'You already signed up for this hour.' }, 409)
-    if (saveError.code === '23505') return json({ error: 'You already signed up for this hour.' }, 409)
-    if (saveError.code === '23505') return json({ error: 'You already signed up for this hour.' }, 409)
     console.error('Chain prayer sign-up save failed', { code: saveError.code })
     return json({ error: 'Your sign-up could not be saved. Please try again.' }, 500)
   }
