@@ -48,7 +48,7 @@ Deno.serve(async (req) => {
 
   const { data: rows, error } = await supabase
     .from('chain_prayer_slots')
-    .select('id, hour, full_name, email, last_reminded_at')
+    .select('id, hour, full_name, email, phone, last_reminded_at')
     .eq('hour', targetHour)
     .eq('reminders_enabled', true)
 
@@ -59,7 +59,8 @@ Deno.serve(async (req) => {
 
   const slotLabel = hourLabel(targetHour)
   const cutoff = Date.now() - 20 * 60 * 60 * 1000
-  let sent = 0
+  let textsSent = 0
+  let emailsSent = 0
   let skipped = 0
 
   for (const row of rows ?? []) {
@@ -67,23 +68,53 @@ Deno.serve(async (req) => {
       skipped += 1
       continue
     }
-    try {
-      const result = await sendTemplateEmail('chain-prayer-reminder', row.email, {
-        templateData: { fullName: row.full_name, slotLabel },
-        idempotencyKey: `chain-prayer-reminder-${row.id}-${date}`,
-      })
-      if (result.sent) sent += 1
-      else skipped += 1
+
+    let delivered = false
+    const phone = normalizePhone(row.phone)
+
+    if (phone) {
+      try {
+        const sms = await sendSms(
+          phone,
+          `${String(row.full_name).split(' ')[0]}, your prayer hour (${slotLabel} ET) starts in about an hour. "Pray without ceasing." - 1 Thess 5:17`,
+        )
+        if (sms.sent) {
+          delivered = true
+          textsSent += 1
+        }
+      } catch (smsError) {
+        console.error('Chain prayer reminder text failed', {
+          message: smsError instanceof Error ? smsError.message : 'Unknown error',
+        })
+      }
+    }
+
+    if (!delivered) {
+      try {
+        const result = await sendTemplateEmail('chain-prayer-reminder', row.email, {
+          templateData: { fullName: row.full_name, slotLabel },
+          idempotencyKey: `chain-prayer-reminder-${row.id}-${date}`,
+        })
+        if (result.sent) {
+          delivered = true
+          emailsSent += 1
+        }
+      } catch (sendError) {
+        console.error('Chain prayer reminder send failed', {
+          message: sendError instanceof Error ? sendError.message : 'Unknown error',
+        })
+      }
+    }
+
+    if (delivered) {
       await supabase
         .from('chain_prayer_slots')
         .update({ last_reminded_at: new Date().toISOString() })
         .eq('id', row.id)
-    } catch (sendError) {
-      console.error('Chain prayer reminder send failed', {
-        message: sendError instanceof Error ? sendError.message : 'Unknown error',
-      })
+    } else {
+      skipped += 1
     }
   }
 
-  return json({ targetHour, slotLabel, sent, skipped })
+  return json({ targetHour, slotLabel, textsSent, emailsSent, skipped })
 })
