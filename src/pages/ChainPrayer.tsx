@@ -285,8 +285,9 @@ export default function ChainPrayer() {
                     )}
                   </Button>
                   <p className="text-xs text-muted-foreground">
-                    Your details stay private with the church office. You will receive a confirmation email
-                    plus a daily reminder about an hour before your prayer time (Eastern Time).
+                    Your details stay private with the church office. Add your mobile number to get your
+                    reminder by text about an hour before your prayer time (Eastern Time) — otherwise we
+                    send it by email.
                   </p>
                 </form>
               )}
