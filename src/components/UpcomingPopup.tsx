@@ -126,7 +126,7 @@ export default function UpcomingPopup() {
               <div>
                 <h3 className="font-heading text-xl font-bold text-foreground">{program.title}</h3>
                 {program.titleTi && (
-                  <p className="mt-0.5 text-sm font-medium text-foreground/80" lang="ti">
+                  <p className="mt-0.5 text-sm font-bold text-foreground" lang="ti">
                     {program.titleTi}
                   </p>
                 )}
@@ -137,7 +137,7 @@ export default function UpcomingPopup() {
             </div>
             <p className="text-sm text-muted-foreground">{program.description}</p>
             {program.descriptionTi && (
-              <p className="text-sm text-muted-foreground/90" lang="ti">
+              <p className="text-sm font-semibold text-muted-foreground/90" lang="ti">
                 {program.descriptionTi}
               </p>
             )}
