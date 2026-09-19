@@ -2,6 +2,7 @@ import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors'
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { z } from 'npm:zod@3.23.8'
 import { sendTemplateEmail } from '../_shared/transactional-email-templates/send-email.ts'
+import { normalizePhone, sendSms } from '../_shared/send-sms.ts'
 
 const BodySchema = z.object({
   fullName: z.string().trim().min(1).max(100),
