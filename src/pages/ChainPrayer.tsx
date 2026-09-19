@@ -258,7 +258,7 @@ export default function ChainPrayer() {
                       {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="chain-phone">Phone number (optional)</Label>
+                      <Label htmlFor="chain-phone">Mobile number (for text reminders)</Label>
                       <Input
                         id="chain-phone"
                         type="tel"
