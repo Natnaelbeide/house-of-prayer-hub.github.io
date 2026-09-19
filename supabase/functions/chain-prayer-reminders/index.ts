@@ -1,6 +1,7 @@
 import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors'
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { sendTemplateEmail } from '../_shared/transactional-email-templates/send-email.ts'
+import { normalizePhone, sendSms } from '../_shared/send-sms.ts'
 
 function json(body: unknown, status = 200) {
   return new Response(JSON.stringify(body), {
