@@ -29,6 +29,8 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
   { to: "/announcements", label: "Announcements" },
+  { to: "/chain-prayer", label: "24/7 Chain Prayer" },
+
   { to: "/children-youth", label: "Children & Youth" },
   { to: "/giving", label: "Giving" },
   { to: "/gallery", label: "Gallery" },

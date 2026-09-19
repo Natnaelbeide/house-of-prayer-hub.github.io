@@ -13,6 +13,7 @@ import BibleLessons from "./pages/BibleLessons";
 import BibleTracker from "./pages/BibleTracker";
 import BibleReadingGuide from "./pages/BibleReadingGuide";
 import Announcements from "./pages/Announcements";
+import ChainPrayer from "./pages/ChainPrayer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,8 @@ const App = () => (
           <Route path="/bible-tracker" element={<BibleTracker />} />
           <Route path="/how-to-read-the-bible-in-90-days" element={<BibleReadingGuide />} />
           <Route path="/announcements" element={<Announcements />} />
+          <Route path="/chain-prayer" element={<ChainPrayer />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
