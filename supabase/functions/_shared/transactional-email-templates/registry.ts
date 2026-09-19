@@ -1,6 +1,8 @@
 import type { ComponentType } from 'npm:react@18.3.1'
 import { template as prayerRequestTemplate } from './prayer-request.tsx'
 import { template as prayerFollowUpTemplate } from './prayer-follow-up.tsx'
+import { template as chainPrayerSlotTemplate } from './chain-prayer-slot.tsx'
+import { template as chainPrayerSignupAlertTemplate } from './chain-prayer-signup-alert.tsx'
 
 export interface TemplateEntry {
   component: ComponentType<any>
@@ -22,4 +24,6 @@ export interface TemplateEntry {
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'prayer-request': prayerRequestTemplate,
   'prayer-follow-up': prayerFollowUpTemplate,
+  'chain-prayer-slot': chainPrayerSlotTemplate,
+  'chain-prayer-signup-alert': chainPrayerSignupAlertTemplate,
 }

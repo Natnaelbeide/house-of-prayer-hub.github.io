@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS public.chain_prayer_slot_summary();

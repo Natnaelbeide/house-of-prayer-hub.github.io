@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      chain_prayer_slots: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string
+          hour: number
+          id: string
+          phone: string | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name: string
+          hour: number
+          id?: string
+          phone?: string | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string
+          hour?: number
+          id?: string
+          phone?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       ministry_registrations: {
         Row: {
           created_at: string
