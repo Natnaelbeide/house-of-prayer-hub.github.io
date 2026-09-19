@@ -143,7 +143,8 @@ export default function ChainPrayer() {
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6" />
           <p className="text-primary-foreground/80 max-w-xl mx-auto text-lg">
             Every hour of the day covered in prayer. Choose the hour you can stand in the gap — we
-            will email your confirmation and a reminder about an hour before your prayer time each day.
+            will text you a reminder about an hour before your prayer time each day (email if you
+            prefer not to share a number).
           </p>
         </div>
       </section>
@@ -211,8 +212,8 @@ export default function ChainPrayer() {
                     Your prayer hour is {confirmed}.
                   </p>
                   <p className="text-muted-foreground mt-2">
-                    We sent a confirmation email with your hour, and we will remind you about an hour
-                    before your prayer time each day. Thank you for standing in the gap.
+                    We sent your confirmation, and we will remind you about an hour before your prayer
+                    time each day — by text if you gave a mobile number. Thank you for standing in the gap.
                   </p>
                   <Button type="button" variant="link" onClick={() => setConfirmed(null)} className="mt-3 text-accent">
                     Sign up for another hour
@@ -257,7 +258,7 @@ export default function ChainPrayer() {
                       {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="chain-phone">Phone number (optional)</Label>
+                      <Label htmlFor="chain-phone">Mobile number (for text reminders)</Label>
                       <Input
                         id="chain-phone"
                         type="tel"
@@ -285,8 +286,9 @@ export default function ChainPrayer() {
                     )}
                   </Button>
                   <p className="text-xs text-muted-foreground">
-                    Your details stay private with the church office. You will receive a confirmation email
-                    plus a daily reminder about an hour before your prayer time (Eastern Time).
+                    Your details stay private with the church office. Add your mobile number to get your
+                    reminder by text about an hour before your prayer time (Eastern Time) — otherwise we
+                    send it by email.
                   </p>
                 </form>
               )}

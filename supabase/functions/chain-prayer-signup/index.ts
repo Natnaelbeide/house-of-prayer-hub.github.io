@@ -2,6 +2,7 @@ import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors'
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { z } from 'npm:zod@3.23.8'
 import { sendTemplateEmail } from '../_shared/transactional-email-templates/send-email.ts'
+import { normalizePhone, sendSms } from '../_shared/send-sms.ts'
 
 const BodySchema = z.object({
   fullName: z.string().trim().min(1).max(100),
@@ -120,6 +121,20 @@ Deno.serve(async (req) => {
     email: data.email,
     phone: data.phone || 'Not provided',
     submittedAt: new Date(saved.created_at).toLocaleString('en-US', { timeZone: 'America/New_York' }),
+  }
+
+  const phone = normalizePhone(data.phone)
+  if (phone) {
+    try {
+      await sendSms(
+        phone,
+        `${data.fullName.split(' ')[0]}, your 24/7 chain prayer hour is ${slotLabel} ET. We'll text you a reminder about an hour before each day. - House of Prayer DMV`,
+      )
+    } catch (smsError) {
+      console.error('Chain prayer confirmation text failed', {
+        message: smsError instanceof Error ? smsError.message : 'Unknown error',
+      })
+    }
   }
 
   try {
