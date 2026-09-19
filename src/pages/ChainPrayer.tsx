@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-type SlotSummary = { hour: number; count: number; firstNames: string[] };
+type SlotSummary = { hour: number; count: number };
 
 const schema = z.object({
   fullName: z.string().trim().min(1, "Please enter your name").max(100),
@@ -199,7 +199,7 @@ export default function ChainPrayer() {
                     >
                       <p className="font-heading font-bold text-foreground text-sm">{hourLabel(hour)}</p>
                       <p className="text-xs text-muted-foreground mt-1">
-                        {slot ? `${slot.count} praying · ${slot.firstNames.join(", ")}` : "Open hour"}
+                        {slot ? `${slot.count} ${slot.count === 1 ? "person" : "people"} praying` : "Open hour"}
                       </p>
                     </button>
                   );
