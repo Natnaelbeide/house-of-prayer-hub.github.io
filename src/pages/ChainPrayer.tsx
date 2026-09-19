@@ -198,8 +198,8 @@ export default function ChainPrayer() {
                       }`}
                     >
                       <p className="font-heading font-bold text-foreground text-sm">{hourLabel(hour)}</p>
-                      <p className="text-xs text-muted-foreground mt-1">
-                        {slot ? `${slot.count} ${slot.count === 1 ? "person" : "people"} praying` : "Open hour"}
+                      <p className="text-xs text-accent mt-1">
+                        {slot ? slot.count : "Open hour"}
                       </p>
                     </button>
                   );
