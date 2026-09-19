@@ -124,7 +124,7 @@ export default function ChainPrayer() {
     <Layout>
       <Seo
         title="24/7 Chain Prayer | House of Prayer Church DMV"
-        description="Join the 24/7 chain of prayer at House of Prayer Church DMV. Choose an hour to cover in prayer and receive an email confirming your prayer hour."
+        description="Join the 24/7 chain of prayer at House of Prayer Church DMV. Choose an hour to cover in prayer and receive email reminders before your prayer hour."
         path="/chain-prayer"
       />
 
@@ -142,8 +142,8 @@ export default function ChainPrayer() {
           </p>
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6" />
           <p className="text-primary-foreground/80 max-w-xl mx-auto text-lg">
-            Every hour of the day covered in prayer. Choose the hour you can stand in the gap, and we
-            will email you a confirmation of your hour.
+            Every hour of the day covered in prayer. Choose the hour you can stand in the gap — we
+            will email your confirmation and a reminder about an hour before your prayer time each day.
           </p>
         </div>
       </section>
@@ -211,7 +211,8 @@ export default function ChainPrayer() {
                     Your prayer hour is {confirmed}.
                   </p>
                   <p className="text-muted-foreground mt-2">
-                    We sent a confirmation email with your hour. Thank you for standing in the gap.
+                    We sent a confirmation email with your hour, and we will remind you about an hour
+                    before your prayer time each day. Thank you for standing in the gap.
                   </p>
                   <Button type="button" variant="link" onClick={() => setConfirmed(null)} className="mt-3 text-accent">
                     Sign up for another hour
@@ -284,7 +285,8 @@ export default function ChainPrayer() {
                     )}
                   </Button>
                   <p className="text-xs text-muted-foreground">
-                    Your details stay private with the church office. You will receive an email confirming the hour you chose.
+                    Your details stay private with the church office. You will receive a confirmation email
+                    plus a daily reminder about an hour before your prayer time (Eastern Time).
                   </p>
                 </form>
               )}

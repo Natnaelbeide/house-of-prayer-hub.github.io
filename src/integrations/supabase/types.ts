@@ -21,7 +21,9 @@ export type Database = {
           full_name: string
           hour: number
           id: string
+          last_reminded_at: string | null
           phone: string | null
+          reminders_enabled: boolean
           updated_at: string
         }
         Insert: {
@@ -30,7 +32,9 @@ export type Database = {
           full_name: string
           hour: number
           id?: string
+          last_reminded_at?: string | null
           phone?: string | null
+          reminders_enabled?: boolean
           updated_at?: string
         }
         Update: {
@@ -39,7 +43,9 @@ export type Database = {
           full_name?: string
           hour?: number
           id?: string
+          last_reminded_at?: string | null
           phone?: string | null
+          reminders_enabled?: boolean
           updated_at?: string
         }
         Relationships: []
