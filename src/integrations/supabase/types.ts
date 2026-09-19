@@ -109,14 +109,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      chain_prayer_slot_summary: {
-        Args: never
-        Returns: {
-          first_names: string[]
-          hour: number
-          participant_count: number
-        }[]
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never
