@@ -24,4 +24,6 @@ export interface TemplateEntry {
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'prayer-request': prayerRequestTemplate,
   'prayer-follow-up': prayerFollowUpTemplate,
+  'chain-prayer-slot': chainPrayerSlotTemplate,
+  'chain-prayer-signup-alert': chainPrayerSignupAlertTemplate,
 }
