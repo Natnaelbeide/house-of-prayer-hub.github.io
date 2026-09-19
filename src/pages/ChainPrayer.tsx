@@ -140,6 +140,9 @@ export default function ChainPrayer() {
           <p className="text-primary-foreground/90 text-lg mb-2" lang="ti">
             ናይ 24 ሰዓት ሰንሰለት ጸሎት
           </p>
+          <p className="text-accent text-xl font-semibold mb-4" lang="ti">
+            “1ይ ተሰሎንቄ 5:17 — ከየባተኽኩም ጸልዩ።”
+          </p>
           <div className="w-16 h-1 bg-gradient-gold mx-auto rounded-full mb-6" />
           <p className="text-primary-foreground/80 max-w-xl mx-auto text-lg">
             Every hour of the day covered in prayer. Choose the hour you can stand in the gap — we
