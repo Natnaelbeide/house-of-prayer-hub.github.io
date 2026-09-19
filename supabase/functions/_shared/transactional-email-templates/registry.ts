@@ -3,6 +3,7 @@ import { template as prayerRequestTemplate } from './prayer-request.tsx'
 import { template as prayerFollowUpTemplate } from './prayer-follow-up.tsx'
 import { template as chainPrayerSlotTemplate } from './chain-prayer-slot.tsx'
 import { template as chainPrayerSignupAlertTemplate } from './chain-prayer-signup-alert.tsx'
+import { template as chainPrayerReminderTemplate } from './chain-prayer-reminder.tsx'
 
 export interface TemplateEntry {
   component: ComponentType<any>
@@ -26,4 +27,5 @@ export const TEMPLATES: Record<string, TemplateEntry> = {
   'prayer-follow-up': prayerFollowUpTemplate,
   'chain-prayer-slot': chainPrayerSlotTemplate,
   'chain-prayer-signup-alert': chainPrayerSignupAlertTemplate,
+  'chain-prayer-reminder': chainPrayerReminderTemplate,
 }
