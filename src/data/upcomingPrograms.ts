@@ -17,6 +17,7 @@ export interface UpcomingProgram {
   videoUrl: string;
   location?: string;
   link?: string;
+  linkLabel?: string;
   isNew?: boolean;
 }
 
@@ -72,6 +73,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     videoUrl: schoolOfMinistryVideo.url,
     location: "3846 King St, Alexandria, VA",
     link: "/announcements#school-of-ministry",
+    linkLabel: "Register Now",
     isNew: true,
   },
   {

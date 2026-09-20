@@ -158,8 +158,13 @@ export default function UpcomingPopup() {
               )}
             </div>
             {program.link && (
-              <Button asChild variant="outline" className="w-full border-accent text-foreground">
-                <a href={program.link}>Registration & details</a>
+              <Button
+                asChild
+                className="w-full bg-gradient-gold font-semibold text-foreground hover:opacity-90"
+              >
+                <a href={program.link} onClick={handleClose}>
+                  {program.linkLabel ?? "Registration & details"}
+                </a>
               </Button>
             )}
 
