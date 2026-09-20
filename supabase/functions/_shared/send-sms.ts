@@ -36,9 +36,9 @@ export async function sendSms(to: string, body: string): Promise<SendSmsResult> 
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      to: phone,
-      text_header: 'House of Prayer DMV',
-      text_body: body.slice(0, 300),
+      subscribers: [phone],
+      header: 'House of Prayer DMV',
+      message_body: body.slice(0, 300),
     }),
   })
 
