@@ -17,10 +17,16 @@ export type SendSmsResult = { sent: boolean; reason?: string }
 
 export async function sendSms(to: string, body: string): Promise<SendSmsResult> {
   const apiKey = Deno.env.get('CLEARSTREAM_API_KEY')
-  if (!apiKey) return { sent: false, reason: 'missing_api_key' }
+  if (!apiKey) {
+    console.error('SMS skipped: CLEARSTREAM_API_KEY is not set')
+    return { sent: false, reason: 'missing_api_key' }
+  }
 
   const phone = normalizePhone(to)
-  if (!phone) return { sent: false, reason: 'invalid_phone' }
+  if (!phone) {
+    console.error('SMS skipped: phone could not be normalized')
+    return { sent: false, reason: 'invalid_phone' }
+  }
 
   const response = await fetch(CLEARSTREAM_URL, {
     method: 'POST',
