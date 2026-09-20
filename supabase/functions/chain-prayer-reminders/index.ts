@@ -77,6 +77,7 @@ Deno.serve(async (req) => {
         const sms = await sendSms(
           phone,
           `${String(row.full_name).split(' ')[0]}, your prayer hour (${slotLabel} ET) starts in about an hour. "Pray without ceasing." - 1 Thess 5:17`,
+          String(row.full_name),
         )
         if (sms.sent) {
           delivered = true

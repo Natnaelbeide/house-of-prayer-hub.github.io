@@ -129,6 +129,7 @@ Deno.serve(async (req) => {
       await sendSms(
         phone,
         `${data.fullName.split(' ')[0]}, your 24/7 chain prayer hour is ${slotLabel} ET. We'll text you a reminder about an hour before each day. - House of Prayer DMV`,
+        data.fullName,
       )
     } catch (smsError) {
       console.error('Chain prayer confirmation text failed', {
