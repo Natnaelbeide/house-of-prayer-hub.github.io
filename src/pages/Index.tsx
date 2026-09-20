@@ -68,8 +68,8 @@ export default function Index() {
             Foundation of the Apostles and Prophets
           </h1>
           <p
-            className="text-xl sm:text-2xl font-body font-bold mb-2 tracking-wide animate-fade-in-up opacity-0 drop-shadow-lg"
-            style={{ animationDelay: "0.5s", animationFillMode: "forwards", color: "#FF3B30" }}
+            className="text-primary-foreground/90 text-xl sm:text-2xl font-body font-medium mb-2 tracking-wide animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
           >
             House of Prayer Church DMV
           </p>
