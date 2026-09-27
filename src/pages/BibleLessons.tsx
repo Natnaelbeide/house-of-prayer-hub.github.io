@@ -6,6 +6,21 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const lessons = [
   {
+    title: "Who Is Influencing You?",
+    date: "Sunday, September 27, 2026",
+    ages: "Ages 12–16",
+    scripture: "Daniel 1:1–20",
+    summary:
+      "This week in Sunday School, our youth learned from the story of Daniel about the importance of standing firm in their faith and choosing their influences wisely. Even while surrounded by a culture that challenged his beliefs, Daniel remained committed to honoring God.",
+    application:
+      "The students were encouraged to think carefully about how friends, social media, entertainment, and other influences can affect their choices and relationship with God. They learned that they can love and respect everyone while still having the courage to make choices that honor God.",
+    memoryVerse:
+      "\u201CDo not be misled: \u2018Bad company corrupts good character.\u2019\u201D",
+    memoryVerseRef: "1 Corinthians 15:33",
+    takeaway:
+      "Love everyone. Choose your closest influences wisely. Stand for God with courage and respect.",
+  },
+  {
     title: "Give Your Worries to Jesus",
     date: "Sunday, September 20, 2026",
     ages: "Ages 9–11",
