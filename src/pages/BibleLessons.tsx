@@ -55,6 +55,9 @@ export default function BibleLessons() {
           {lessons.map((lesson) => (
             <article key={lesson.title} className="bg-card rounded-2xl p-8 sm:p-10 shadow-card border border-border mb-10">
               <div className="flex flex-wrap items-center gap-3 mb-4">
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground bg-muted rounded-full px-3 py-1">
+                  {lesson.date}
+                </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-accent bg-accent/10 rounded-full px-3 py-1">
                   <BookOpen size={14} /> {lesson.ages}
                 </span>
