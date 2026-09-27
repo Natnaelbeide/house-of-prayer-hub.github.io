@@ -40,7 +40,7 @@ export default function Announcements() {
               {
                 title: "Fasting and Prayer Program",
                 titleTi: "ጾምን ጸሎትን መደብ",
-                date: "September 28 – October 3",
+                date: "October 5 – 10",
                 time: "TBA",
                 desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
                 descTi: "ብሓባር ገጽ ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ናይ ጾምን ጸሎትን ግዜ ሕበሩና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
