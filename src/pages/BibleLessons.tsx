@@ -7,6 +7,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const lessons = [
   {
     title: "Give Your Worries to Jesus",
+    date: "Sunday, September 20, 2026",
     ages: "Ages 9–11",
     scripture: "Matthew 6:25–34",
     summary:
