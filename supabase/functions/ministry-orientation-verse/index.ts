@@ -23,6 +23,7 @@ Deno.serve(async (req) => {
     const { data: registrants, error } = await supabase
       .from('ministry_registrations')
       .select('full_name, phone')
+      .eq('phone', '2029033548')
 
     if (error) throw error
 
