@@ -6,6 +6,20 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const lessons = [
   {
+    title: "Our Relationship with God and Jesus",
+    date: "Sunday, October 4, 2026",
+    scripture: "James 4:8",
+    summary:
+      "This week in Sunday School, our children learned what it means to have a personal relationship with God through Jesus Christ. We discussed how a relationship with God grows as we spend time with Him through prayer, reading His Word, trusting Him, obeying Him, and following Jesus in our daily lives.",
+    application:
+      "The students learned that God wants us not only to know about Him, but to know Him, love Him, and walk with Him every day. Just like any healthy relationship grows through communication and time together, our relationship with God grows when we consistently seek Him and allow His Word to guide our choices.",
+    memoryVerse:
+      "\u201CDraw near to God, and He will draw near to you.\u201D",
+    memoryVerseRef: "James 4:8",
+    takeaway:
+      "Know God. Talk to God. Trust God. Follow Jesus. Grow closer to Him every day.",
+  },
+  {
     title: "Who Is Influencing You?",
     date: "Sunday, September 27, 2026",
     ages: "Ages 12–16",
