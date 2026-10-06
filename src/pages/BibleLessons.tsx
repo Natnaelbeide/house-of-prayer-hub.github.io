@@ -4,7 +4,19 @@ import { ArrowLeft, BookOpen, Quote, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const lessons = [
+type Lesson = {
+  title: string;
+  date: string;
+  ages?: string;
+  scripture: string;
+  summary: string;
+  application: string;
+  memoryVerse: string;
+  memoryVerseRef: string;
+  takeaway: string;
+};
+
+const lessons: Lesson[] = [
   {
     title: "Our Relationship with God and Jesus",
     date: "Sunday, October 4, 2026",
@@ -87,9 +99,11 @@ export default function BibleLessons() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground bg-muted rounded-full px-3 py-1">
                   {lesson.date}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-accent bg-accent/10 rounded-full px-3 py-1">
-                  <BookOpen size={14} /> {lesson.ages}
-                </span>
+                {lesson.ages && (
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-accent bg-accent/10 rounded-full px-3 py-1">
+                    <BookOpen size={14} /> {lesson.ages}
+                  </span>
+                )}
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground bg-muted rounded-full px-3 py-1">
                   {lesson.scripture}
                 </span>
