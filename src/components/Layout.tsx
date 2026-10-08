@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Star } from "lucide-react";
 import logo from "@/assets/logo.png";
+import ExploreMore from "@/components/ExploreMore";
 
 const STORAGE_KEY = "fapim_bible_tracker";
 
@@ -109,6 +110,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
+      <ExploreMore />
 
       <footer className="bg-gradient-navy text-primary-foreground">
         <div className="container px-4 py-12">

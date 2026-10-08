@@ -47,6 +47,8 @@ export default function Index() {
           src={heroBg}
           alt="Congregation gathering for worship at House of Prayer Church DMV in Alexandria, Virginia"
           className="absolute inset-0 w-full h-full object-cover scale-110 will-change-transform"
+          fetchPriority="high"
+          decoding="async"
           width={1920}
           height={1080}
         />
