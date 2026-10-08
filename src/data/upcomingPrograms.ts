@@ -28,7 +28,6 @@ export const POPUP_VERSION = "2026-10-08-remove-fasting-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
-  {
     id: "worship-healing-conference",
     title: "Worship and Healing Conference",
     titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
