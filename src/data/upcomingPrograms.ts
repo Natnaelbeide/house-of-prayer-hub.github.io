@@ -1,4 +1,3 @@
-import fastingPrayerVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
 import worshipHealingVideo from "@/assets/announcements/worship-healing.mp4.asset.json";
 import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
 import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
@@ -25,21 +24,10 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-08-poster-v1";
+export const POPUP_VERSION = "2026-10-08-remove-fasting-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
-    id: "fasting-prayer-program",
-    title: "Fasting and Prayer Program",
-    titleTi: "ጾምን ጸሎትን መደብ",
-    date: "October 5 – 10",
-    time: "TBA",
-    description: "Join us for a special time of fasting and prayer as we seek God together as a church family.",
-    descriptionTi: "ብሓባር ገጽ ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ናይ ጾምን ጸሎትን ግዜ ሕበሩና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
-    videoUrl: fastingPrayerVideo.url,
-    location: "3846 King St, Alexandria, VA",
-    isNew: true,
-  },
   {
     id: "worship-healing-conference",
     title: "Worship and Healing Conference",
