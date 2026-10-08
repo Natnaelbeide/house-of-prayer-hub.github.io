@@ -12,7 +12,8 @@ import { upcomingPrograms, POPUP_VERSION } from "@/data/upcomingPrograms";
 
 const STORAGE_KEY = "fapim-upcoming-popup";
 const AUTO_DISMISS_MS = 3 * 60 * 1000; // 3 minutes
-const SHOW_DELAY_MS = 1500; // 1.5 seconds after mount
+const SHOW_DELAY_MS = 1500; // desktop
+const MOBILE_SHOW_DELAY_MS = 8000; // give phone visitors time to see the page first
 const COOLDOWN_MS = 24 * 60 * 60 * 1000; // 24 hours
 
 interface PopupState {
@@ -52,7 +53,7 @@ export default function UpcomingPopup() {
       autoDismissRef.current = setTimeout(() => {
         setOpen(false);
       }, AUTO_DISMISS_MS);
-    }, SHOW_DELAY_MS);
+    }, window.matchMedia("(max-width: 767px)").matches ? MOBILE_SHOW_DELAY_MS : SHOW_DELAY_MS);
 
     return () => {
       clearTimeout(showTimer);
@@ -99,12 +100,13 @@ export default function UpcomingPopup() {
           </DialogHeader>
         </div>
 
-        <div className="max-h-[68vh] overflow-y-auto">
+        <div className="max-h-[60vh] sm:max-h-[68vh] overflow-y-auto">
           <div className="relative aspect-video bg-primary">
             <video
               key={program.id}
               ref={videoRef}
               src={program.videoUrl}
+              preload="metadata"
               className="h-full w-full object-cover"
               controls
               autoPlay
