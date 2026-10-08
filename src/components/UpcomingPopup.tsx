@@ -101,7 +101,10 @@ export default function UpcomingPopup() {
         </div>
 
         <div className="max-h-[60vh] sm:max-h-[68vh] overflow-y-auto">
-          <div className="relative aspect-video bg-primary">
+          <div className={program.posterUrl ? "relative bg-primary" : "relative aspect-video bg-primary"}>
+            {program.posterUrl ? (
+              <img src={program.posterUrl} alt={`${program.title} poster`} className="w-full h-auto" />
+            ) : (
             <video
               key={program.id}
               ref={videoRef}
@@ -115,6 +118,7 @@ export default function UpcomingPopup() {
               preload="metadata"
               aria-label={`${program.title} video announcement`}
             />
+            )}
             {program.isNew && (
               <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-xs font-semibold text-accent-foreground shadow-gold">
                 New
