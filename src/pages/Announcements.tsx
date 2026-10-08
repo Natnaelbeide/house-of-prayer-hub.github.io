@@ -3,6 +3,7 @@ import Seo from "@/components/Seo";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
+import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
 
 export default function Announcements() {
@@ -36,7 +37,7 @@ export default function Announcements() {
       <section className="py-24 bg-background">
         <div ref={cardsRef} className="container px-4">
           <div className="max-w-3xl mx-auto space-y-6">
-            {[
+            {([
               {
                 title: "Fasting and Prayer Program",
                 titleTi: "ጾምን ጸሎትን መደብ",
@@ -54,6 +55,7 @@ export default function Announcements() {
                 desc: "A powerful evening of worship and healing. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
                 highlight: true,
+                poster: worshipHealingPoster.url,
               },
               {
                 title: "Upcoming Conference",
@@ -98,7 +100,7 @@ export default function Announcements() {
                 descTi: "ኩሉ ግዜ ዓርቢ ፡ኣዝዩ ደስ ዘብል ናይ ጸሎት ፡ኣምልኾ ን ፈውስን ምሸት",
               },
 
-            ].map((item) => (
+            ] as Array<{ title: string; titleTi: string; date: string; time: string; desc: string; descTi: string; highlight?: boolean; poster?: string }>).map((item) => (
               <div
                 key={item.title}
                 className={`group rounded-2xl p-6 sm:p-8 shadow-card border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 ${
@@ -135,6 +137,9 @@ export default function Announcements() {
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                     <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
+                    {item.poster && (
+                      <img src={item.poster} alt={`${item.title} poster`} loading="lazy" className="mt-4 w-full max-w-md rounded-xl shadow-card" />
+                    )}
 
                     {item.highlight && (
                       <AnnouncementAudio
