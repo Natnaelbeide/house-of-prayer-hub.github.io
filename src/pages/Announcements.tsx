@@ -39,15 +39,6 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {([
               {
-                title: "Fasting and Prayer Program",
-                titleTi: "ጾምን ጸሎትን መደብ",
-                date: "October 5 – 10",
-                time: "TBA",
-                desc: "Join us for a special time of fasting and prayer as we seek God together as a church family. More details coming soon!",
-                descTi: "ብሓባር ገጽ ኣምላኽ ንምድላይ ኣብ ዝካየድ ፍሉይ ናይ ጾምን ጸሎትን ግዜ ሕበሩና። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
-                highlight: true,
-              },
-              {
                 title: "Worship and Healing Conference",
                 titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
                 date: "October 18",
