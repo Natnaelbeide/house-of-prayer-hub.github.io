@@ -106,7 +106,6 @@ export default function UpcomingPopup() {
               key={program.id}
               ref={videoRef}
               src={program.videoUrl}
-              preload="metadata"
               className="h-full w-full object-cover"
               controls
               autoPlay
