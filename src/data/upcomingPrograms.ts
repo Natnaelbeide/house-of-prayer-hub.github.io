@@ -3,6 +3,7 @@ import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
 import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
 import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
+import fastingPrayerVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
 import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
 
