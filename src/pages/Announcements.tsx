@@ -51,7 +51,7 @@ export default function Announcements() {
               {
                 title: "Upcoming Conference",
                 titleTi: "ዝመጽእ ጉባኤ",
-                date: "November 6-8",
+                date: "November 13-15",
                 time: "TBA",
                 desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
                 descTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ንህጻናትን፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
