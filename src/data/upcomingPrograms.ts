@@ -31,11 +31,11 @@ export const upcomingPrograms: UpcomingProgram[] = [
   {
     id: "fasting-prayer-program",
     title: "Fasting and Prayer Program",
-    titleTi: "ናይ ፆምን ጸሎትን መደብ",
+    titleTi: "ቐጻሊ ናይ ጾምን ጸሎትን ግዜ",
     date: "October 13-18",
     time: "TBA",
     description: "Join us for a week of fasting and prayer as a church family. Let's seek God together.",
-    descriptionTi: "ከም ስድራቤት ሃይማኖት ኣብ ሕጉስ ፆምን ጸሎትን ክንሳተፍ ንዕድም። ንኣምላኽ ንንፍተስ ምሳሕሉ።",
+    descriptionTi: "ነዚ ሰሙን እዚውን ክንቕጽል ኢና ሕበሩና",
     videoUrl: fastingPrayerVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
