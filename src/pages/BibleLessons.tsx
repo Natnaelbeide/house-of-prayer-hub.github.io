@@ -18,6 +18,20 @@ type Lesson = {
 
 const lessons: Lesson[] = [
   {
+    title: "The Power of Forgiveness",
+    date: "Sunday, October 11, 2026",
+    scripture: "Genesis 45:1–15; Ephesians 4:32",
+    summary:
+      "This week in Sunday School, our children learned about the power of forgiveness through the story of Joseph and his brothers. Despite being betrayed and mistreated by his own brothers, Joseph chose to forgive them rather than seek revenge.",
+    application:
+      "The children learned that forgiveness does not mean forgetting the hurt, but choosing to let go of anger and allowing God to bring healing to our hearts. Through an interactive activity, they also discovered how our words and actions can affect others and why kindness, compassion, and forgiveness are important in our daily lives.",
+    memoryVerse:
+      "\u201CBe kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.\u201D",
+    memoryVerseRef: "Ephesians 4:32",
+    takeaway:
+      "Forgiveness is stronger than revenge. Just as God forgives us through Jesus Christ, we should learn to forgive others and show His love in our daily lives.",
+  },
+  {
     title: "Our Relationship with God and Jesus",
     date: "Sunday, October 4, 2026",
     scripture: "James 4:8",
