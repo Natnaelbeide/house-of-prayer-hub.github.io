@@ -82,7 +82,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     title: "Sunday Service",
     titleTi: "ናይ ሰንበት ኣገልግሎት",
     date: "Every Sunday",
-    time: "3:30 PM",
+    time: "3:00 PM",
     description: "Join us for worship, prayer, and the Word.",
     descriptionTi: "ኣብ 3846 King St, Alexandria, VA ምሳና ኣምልኹ። ሓደስቲ ኣጋይሽን ስድራቤታትን ኩሉ ግዜ እንቋዕ ደሓን መጻእኩም።",
     videoUrl: sundayServiceVideo.url,

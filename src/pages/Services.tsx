@@ -9,7 +9,7 @@ export default function Services() {
 
   return (
     <Layout>
-      <Seo title="Service Times | House of Prayer Church DMV" description="Join us Friday 6:30 PM for prayer, Sunday 3:30 PM for worship, and Wednesday 8:00 PM online ministers class in Alexandria, VA." path="/services" />
+      <Seo title="Service Times | House of Prayer Church DMV" description="Join us Friday 6:30 PM for prayer, Sunday 3:00 PM for worship, and Wednesday 8:00 PM online ministers class in Alexandria, VA." path="/services" />
       {/* Hero Banner */}
       <section className="relative py-28 bg-gradient-navy overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -35,7 +35,7 @@ export default function Services() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               { day: "Friday Night Prayer Service", time: "6:30 PM", desc: "A powerful evening of worship, prayer, and the Word of God.", icon: "🕯️" },
-              { day: "Sunday Service", time: "3:30 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
+              { day: "Sunday Service", time: "3:00 PM", desc: "Come together for Sunday worship, teaching, and fellowship.", icon: "☀️" },
               { day: "Wednesday Ministers Class", time: "8:00 PM", desc: "Weekly Zoom class teaching how to be a servant of God.", icon: "💻" },
             ].map((s) => (
               <div
