@@ -25,7 +25,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-20-conf-2325-v6";
+export const POPUP_VERSION = "2026-10-20-conf-2325-v7";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {

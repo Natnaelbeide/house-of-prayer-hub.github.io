@@ -90,7 +90,7 @@ export default function Announcements() {
                 descTi: "ኩሉ ግዜ ዓርቢ ፡ኣዝዩ ደስ ዘብል ናይ ጸሎት ፡ኣምልኾ ን ፈውስን ምሸት",
               },
 
-            ] as Array<{ title: string; titleTi: string; date: string; time: string; desc: string; descTi: string; highlight?: boolean; poster?: string }>).map((item) => (
+            ] as Array<{ title: string; titleTi: string; date: string; time: string; desc: string; descTi: string; highlight?: boolean; poster?: string; note?: string }>).map((item) => (
               <div
                 key={item.title}
                 className={`group rounded-2xl p-6 sm:p-8 shadow-card border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 ${
@@ -127,6 +127,9 @@ export default function Announcements() {
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                     <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
+                    {item.note && (
+                      <p className="font-bold text-foreground mt-2">{item.note}</p>
+                    )}
                     {item.highlight && (
                       <AnnouncementAudio
                         text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
