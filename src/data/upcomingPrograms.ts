@@ -19,12 +19,13 @@ export interface UpcomingProgram {
   location?: string;
   link?: string;
   linkLabel?: string;
+  note?: string;
   isNew?: boolean;
 }
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-20-conf-2325-v6";
+export const POPUP_VERSION = "2026-10-20-conf-2325-v7";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -107,6 +108,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     time: "8:00 PM",
     description: "Teaching how to be a servant of God via Zoom.",
     descriptionTi: "ንጎይታ ካብ ምስዓብ ዝወጸ ኣገልግሎትን፡ ኣገልጋሊ ኣምላኽ ከመይ ክኸውን ኣለዎ ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ ኣሎና። ኩሉኹም ኣገልገልቲ ክትሳተፉ ንዕድም።",
+    note: "NB: No class tomorrow, Wednesday, October 21.",
     videoUrl: ministersClassVideo.url,
     location: "Online (Zoom)",
   },
