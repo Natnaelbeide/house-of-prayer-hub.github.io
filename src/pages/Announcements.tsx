@@ -38,11 +38,11 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {([
               {
-                title: "Worship and Healing Conference",
+                title: "Revival Meetings with Pastor Tesfazion Hagos",
                 titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
                 date: "October 23 & 25",
                 time: "Fri 6:30 PM & Sun 3:00 PM",
-                desc: "A powerful two-day conference with special guest Pastor Tesfasion Hagos. Come expecting the presence and touch of God.",
+                desc: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
                 highlight: true,
               },
