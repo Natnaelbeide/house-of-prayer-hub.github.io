@@ -71,6 +71,7 @@ export default function Announcements() {
                 time: "8:00 PM",
                 desc: "Join our weekly Zoom class teaching how to be a servant of God. All ministers and leaders are encouraged to attend.",
                 descTi: "ንጎይታ ካብ ምስዓብ ዝወጸ ኣገልግሎትን፡ ኣገልጋሊ ኣምላኽ ከመይ ክኸውን ኣለዎ ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ ኣሎና። ኩሉኹም ኣገልገልቲ ክትሳተፉ ንዕድም።",
+                note: "NB: No class tomorrow, Wednesday, October 21.",
               },
               {
                 title: "Sunday Service",

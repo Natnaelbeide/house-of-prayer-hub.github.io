@@ -146,6 +146,9 @@ export default function UpcomingPopup() {
                 {program.descriptionTi}
               </p>
             )}
+            {program.note && (
+              <p className="font-bold text-foreground">{program.note}</p>
+            )}
             <div className="space-y-1.5 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar size={15} className="shrink-0 text-accent" />

@@ -19,6 +19,7 @@ export interface UpcomingProgram {
   location?: string;
   link?: string;
   linkLabel?: string;
+  note?: string;
   isNew?: boolean;
 }
 
@@ -107,6 +108,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     time: "8:00 PM",
     description: "Teaching how to be a servant of God via Zoom.",
     descriptionTi: "ንጎይታ ካብ ምስዓብ ዝወጸ ኣገልግሎትን፡ ኣገልጋሊ ኣምላኽ ከመይ ክኸውን ኣለዎ ዝምህር ሰሙናዊ ናይ Zoom ትምህርቲ ኣሎና። ኩሉኹም ኣገልገልቲ ክትሳተፉ ንዕድም።",
+    note: "NB: No class tomorrow, Wednesday, October 21.",
     videoUrl: ministersClassVideo.url,
     location: "Online (Zoom)",
   },
