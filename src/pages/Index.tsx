@@ -39,7 +39,7 @@ export default function Index() {
 
   return (
     <Layout>
-      <Seo title="House of Prayer Church DMV | FAPIM Alexandria, VA" description="Worship with House of Prayer Church DMV in Alexandria, VA. Sunday 3:30 PM, Friday night prayer 6:30 PM, Wednesday ministers class online." path="/" />
+      <Seo title="House of Prayer Church DMV | FAPIM Alexandria, VA" description="Worship with House of Prayer Church DMV in Alexandria, VA. Sunday 3:00 PM, Friday night prayer 6:30 PM, Wednesday ministers class online." path="/" />
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
@@ -119,7 +119,7 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               { day: "Friday Night Prayer", time: "6:30 PM", icon: "🕯️", desc: "Evening Prayer & Worship" },
-              { day: "Sunday", time: "3:30 PM", icon: "☀️", desc: "Main Service" },
+              { day: "Sunday", time: "3:00 PM", icon: "☀️", desc: "Main Service" },
               { day: "Wednesday Ministers Class", time: "8:00 PM", icon: "💻", desc: "Teaching How to Be a Servant of God" },
             ].map((s) => (
               <div key={s.day} className="group bg-card rounded-2xl p-8 shadow-card text-center border border-border hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
