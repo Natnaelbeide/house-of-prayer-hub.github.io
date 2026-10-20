@@ -38,7 +38,7 @@ export default function Announcements() {
           <div className="max-w-3xl mx-auto space-y-6">
             {([
               {
-                title: "Worship and Healing Conference",
+                title: "Revival Meetings with Pastor Tesfazion Hagos",
                 titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
                 date: "October 23 & 25",
                 time: "Fri 6:30 PM & Sun 3:00 PM",
