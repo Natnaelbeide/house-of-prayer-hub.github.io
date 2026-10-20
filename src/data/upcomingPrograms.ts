@@ -4,7 +4,6 @@ import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4
 import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
 import fastingPrayerVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
-import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
 
 export interface UpcomingProgram {
@@ -25,7 +24,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-20-conf-2325-v1";
+export const POPUP_VERSION = "2026-10-20-conf-2325-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -49,7 +48,6 @@ export const upcomingPrograms: UpcomingProgram[] = [
     description: "A powerful two-day conference with special guest Pastor Tesfasion Hagos. Come expecting the presence and touch of God.",
     descriptionTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
     videoUrl: worshipHealingVideo.url,
-    posterUrl: worshipHealingPoster.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
   },
