@@ -24,14 +24,14 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-20-conf-2325-v3";
+export const POPUP_VERSION = "2026-10-20-conf-2325-v4";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
     id: "fasting-prayer-program",
     title: "Fasting and Prayer Program",
     titleTi: "ቐጻሊ ናይ ጾምን ጸሎትን ግዜ",
-    date: "October 13-18",
+    date: "October 21-23",
     time: "TBA",
     description: "Join us for a week of fasting and prayer as a church family. Let's seek God together.",
     descriptionTi: "ነዚ ሰሙን እዚውን ክንቕጽል ኢና ሕበሩና",
