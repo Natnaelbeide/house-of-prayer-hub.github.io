@@ -18,6 +18,20 @@ type Lesson = {
 
 const lessons: Lesson[] = [
   {
+    title: "Trusting God's Timing",
+    date: "Sunday, October 18, 2026",
+    scripture: "John 11:1–44",
+    summary:
+      "This week in Sunday School, our children learned about patience, faith, and trusting God's timing through the story of Jesus raising Lazarus from the dead.",
+    application:
+      "The students discovered that even when God does not answer our prayers immediately or in the way we expect, His love and care for us never change. Through the example of Mary and Martha, they learned the importance of remaining faithful, praying, and trusting God's wisdom during difficult times.",
+    memoryVerse:
+      "\u201CWait for the Lord; be strong and take heart and wait for the Lord.\u201D",
+    memoryVerseRef: "Psalm 27:14",
+    takeaway:
+      "God's timing is not always our timing. Keep praying, remain patient, and trust Him even when you don't understand His plan.",
+  },
+  {
     title: "The Power of Forgiveness",
     date: "Sunday, October 11, 2026",
     scripture: "Genesis 45:1–15; Ephesians 4:32",
