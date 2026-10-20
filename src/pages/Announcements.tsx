@@ -41,7 +41,7 @@ export default function Announcements() {
                 title: "Worship and Healing Conference",
                 titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
                 date: "October 23 & 25",
-                time: "TBA",
+                time: "Fri 6:30 PM & Sun 3:00 PM",
                 desc: "A powerful two-day conference with special guest Pastor Tesfasion Hagos. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
                 highlight: true,
