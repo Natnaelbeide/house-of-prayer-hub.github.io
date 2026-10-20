@@ -3,7 +3,6 @@ import Seo from "@/components/Seo";
 import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
-import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
 
 export default function Announcements() {
@@ -46,7 +45,6 @@ export default function Announcements() {
                 desc: "A powerful two-day conference with special guest Pastor Tesfasion Hagos. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
                 highlight: true,
-                poster: worshipHealingPoster.url,
               },
               {
                 title: "Upcoming Conference",
@@ -128,10 +126,6 @@ export default function Announcements() {
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                     <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
-                    {item.poster && (
-                      <img src={item.poster} alt={`${item.title} poster`} loading="lazy" className="mt-4 w-full max-w-md rounded-xl shadow-card" />
-                    )}
-
                     {item.highlight && (
                       <AnnouncementAudio
                         text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
