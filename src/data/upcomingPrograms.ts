@@ -24,7 +24,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-20-conf-2325-v4";
+export const POPUP_VERSION = "2026-10-20-conf-2325-v5";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -32,8 +32,8 @@ export const upcomingPrograms: UpcomingProgram[] = [
     title: "Fasting and Prayer Program",
     titleTi: "ቐጻሊ ናይ ጾምን ጸሎትን ግዜ",
     date: "October 21-23",
-    time: "TBA",
-    description: "Join us for a week of fasting and prayer as a church family. Let's seek God together.",
+    time: "Closing prayer 8:15 PM nightly on WhatsApp",
+    description: "Join us for three days of fasting and prayer as a church family. Closing prayer every night at 8:15 PM on WhatsApp.",
     descriptionTi: "ነዚ ሰሙን እዚውን ክንቕጽል ኢና ሕበሩና",
     videoUrl: fastingPrayerVideo.url,
     location: "3846 King St, Alexandria, VA",
