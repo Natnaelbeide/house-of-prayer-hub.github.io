@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Star } from "lucide-react";
 import logo from "@/assets/logo.png";
 import ExploreMore from "@/components/ExploreMore";
+import AnnouncementBell from "@/components/AnnouncementBell";
 
 const STORAGE_KEY = "fapim_bible_tracker";
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { MapPin, Heart, ChevronRight, Youtube, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
-import UpcomingPopup from "@/components/UpcomingPopup";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -237,8 +236,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      <UpcomingPopup />
     </Layout>
   );
 }
