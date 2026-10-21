@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Bell, ChevronLeft, ChevronRight, Clock, MapPin, Sparkles, X } from "lucide-react";
+import { Bell, Calendar, ChevronLeft, ChevronRight, Clock, MapPin, Sparkles, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -114,6 +114,10 @@ export default function AnnouncementBell() {
                 <p className="font-bold text-foreground">{program.note}</p>
               )}
               <div className="space-y-1.5 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <Calendar size={15} className="shrink-0 text-accent" />
+                  <span>{program.date}</span>
+                </div>
                 <div className="flex items-center gap-2">
                   <Clock size={15} className="shrink-0 text-accent" />
                   <span>{program.time}</span>
