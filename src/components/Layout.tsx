@@ -111,6 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
+      <AnnouncementBell />
       <ExploreMore />
 
       <footer className="bg-gradient-navy text-primary-foreground">
