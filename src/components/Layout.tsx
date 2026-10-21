@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Star } from "lucide-react";
 import logo from "@/assets/logo.png";
 import ExploreMore from "@/components/ExploreMore";
-import AnnouncementBell from "@/components/AnnouncementBell";
+import UpcomingPopup from "@/components/UpcomingPopup";
 
 const STORAGE_KEY = "fapim_bible_tracker";
 
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
-      <AnnouncementBell />
+      <UpcomingPopup />
       <ExploreMore />
 
       <footer className="bg-gradient-navy text-primary-foreground">
