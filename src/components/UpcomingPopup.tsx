@@ -158,40 +158,6 @@ export default function UpcomingPopup() {
               </Button>
             )}
 
-            {hasMultiplePrograms && (
-              <div className="flex items-center justify-between gap-3 border-t border-border pt-3">
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => showProgram((activeIndex - 1 + upcomingPrograms.length) % upcomingPrograms.length)}
-                  aria-label="Previous announcement"
-                >
-                  <ChevronLeft />
-                </Button>
-                <div className="flex items-center justify-center gap-1.5" aria-label="Announcement pages">
-                  {upcomingPrograms.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      onClick={() => showProgram(index)}
-                      className={`h-2.5 w-2.5 rounded-full transition-colors ${index === activeIndex ? "bg-accent" : "bg-muted-foreground/30"}`}
-                      aria-label={`Show ${item.title}`}
-                      aria-current={index === activeIndex ? "true" : undefined}
-                    />
-                  ))}
-                </div>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => showProgram((activeIndex + 1) % upcomingPrograms.length)}
-                  aria-label="Next announcement"
-                >
-                  <ChevronRight />
-                </Button>
-              </div>
-            )}
           </div>
         </div>
 
