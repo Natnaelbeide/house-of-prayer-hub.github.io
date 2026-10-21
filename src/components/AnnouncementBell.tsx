@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Bell, Calendar, ChevronLeft, ChevronRight, Clock, MapPin, Sparkles, X } from "lucide-react";
+import { Bell, Calendar, ChevronLeft, ChevronRight, Clock, MapPin, Sparkles } from "lucide-react";
 import {
   Dialog,
   DialogContent,
