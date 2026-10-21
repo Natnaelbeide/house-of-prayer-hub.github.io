@@ -4,7 +4,7 @@ import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
-import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
+import worshipHealingPoster from "@/assets/announcements/revival-poster.jpg.asset.json";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
