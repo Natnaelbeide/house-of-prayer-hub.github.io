@@ -132,6 +132,14 @@ export default function Announcements() {
                     {item.note && (
                       <p className="font-bold text-foreground mt-2">{item.note}</p>
                     )}
+                    {item.poster && (
+                      <img
+                        src={item.poster}
+                        alt={`${item.title} poster`}
+                        className="mt-4 w-full rounded-xl border border-accent/20 shadow-card"
+                        loading="lazy"
+                      />
+                    )}
                     {item.highlight && (
                       <AnnouncementAudio
                         text={`${item.title}. ${item.date}${item.time && item.time !== "TBA" ? ` at ${item.time}` : ""}. ${item.desc}`}
