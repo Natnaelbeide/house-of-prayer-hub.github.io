@@ -82,10 +82,10 @@ export default function UpcomingPopup() {
           </DialogHeader>
         </div>
 
-        <div className="max-h-[60vh] sm:max-h-[68vh] overflow-y-auto">
-          <div className={program.posterUrl ? "relative bg-primary" : "relative aspect-video bg-primary"}>
+        <div className="min-h-0 flex-1 overflow-y-auto">
+          <div className="relative aspect-video bg-primary">
             {program.posterUrl ? (
-              <img src={program.posterUrl} alt={`${program.title} poster`} className="w-full h-auto" />
+              <img src={program.posterUrl} alt={`${program.title} poster`} className="h-full w-full object-cover" />
             ) : (
             <video
               key={program.id}
