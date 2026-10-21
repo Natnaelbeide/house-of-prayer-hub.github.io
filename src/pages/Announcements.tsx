@@ -4,6 +4,7 @@ import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
+import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -44,6 +45,7 @@ export default function Announcements() {
                 time: "Fri 6:30 PM & Sun 3:00 PM",
                 desc: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
+                poster: worshipHealingPoster.url,
                 highlight: true,
               },
               {
@@ -129,6 +131,14 @@ export default function Announcements() {
                     <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
                     {item.note && (
                       <p className="font-bold text-foreground mt-2">{item.note}</p>
+                    )}
+                    {item.poster && (
+                      <img
+                        src={item.poster}
+                        alt={`${item.title} poster`}
+                        className="mt-4 w-full rounded-xl border border-accent/20 shadow-card"
+                        loading="lazy"
+                      />
                     )}
                     {item.highlight && (
                       <AnnouncementAudio
