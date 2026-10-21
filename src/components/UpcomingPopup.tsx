@@ -158,44 +158,46 @@ export default function UpcomingPopup() {
               </Button>
             )}
 
-            {hasMultiplePrograms && (
-              <div className="flex items-center justify-between gap-3 border-t border-border pt-3">
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => showProgram((activeIndex - 1 + upcomingPrograms.length) % upcomingPrograms.length)}
-                  aria-label="Previous announcement"
-                >
-                  <ChevronLeft />
-                </Button>
-                <div className="flex items-center justify-center gap-1.5" aria-label="Announcement pages">
-                  {upcomingPrograms.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      onClick={() => showProgram(index)}
-                      className={`h-2.5 w-2.5 rounded-full transition-colors ${index === activeIndex ? "bg-accent" : "bg-muted-foreground/30"}`}
-                      aria-label={`Show ${item.title}`}
-                      aria-current={index === activeIndex ? "true" : undefined}
-                    />
-                  ))}
-                </div>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => showProgram((activeIndex + 1) % upcomingPrograms.length)}
-                  aria-label="Next announcement"
-                >
-                  <ChevronRight />
-                </Button>
-              </div>
-            )}
           </div>
         </div>
 
-        <div className="shrink-0 px-5 pb-5">
+        <div className="shrink-0 px-5 pb-5 pt-3">
+          {hasMultiplePrograms && (
+            <div className="flex items-center justify-between gap-3 border-t border-border pb-3">
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => showProgram((activeIndex - 1 + upcomingPrograms.length) % upcomingPrograms.length)}
+                aria-label="Previous announcement"
+                className="border border-accent/40 text-accent hover:bg-accent/10"
+              >
+                <ChevronLeft />
+              </Button>
+              <div className="flex items-center justify-center gap-1.5" aria-label="Announcement pages">
+                {upcomingPrograms.map((item, index) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => showProgram(index)}
+                    className={`h-2.5 w-2.5 rounded-full transition-colors ${index === activeIndex ? "bg-accent" : "bg-muted-foreground/30"}`}
+                    aria-label={`Show ${item.title}`}
+                    aria-current={index === activeIndex ? "true" : undefined}
+                  />
+                ))}
+              </div>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => showProgram((activeIndex + 1) % upcomingPrograms.length)}
+                aria-label="Next announcement"
+                className="border border-accent/40 text-accent hover:bg-accent/10"
+              >
+                <ChevronRight />
+              </Button>
+            </div>
+          )}
           <Button
             onClick={() => setOpen(false)}
             className="w-full bg-gradient-gold text-foreground font-semibold hover:opacity-90"
