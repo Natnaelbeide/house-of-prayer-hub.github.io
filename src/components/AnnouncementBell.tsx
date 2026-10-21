@@ -47,7 +47,7 @@ export default function AnnouncementBell() {
       </button>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="w-[calc(100vw-1.5rem)] max-w-lg border-accent/30 bg-card p-0 overflow-hidden">
+        <DialogContent className="w-[calc(100vw-1.5rem)] max-w-lg border-accent/30 bg-card p-0 overflow-hidden [&>button:last-child]:text-primary-foreground/80 [&>button:last-child]:hover:bg-white/10 [&>button:last-child]:hover:text-primary-foreground">
           <div className="bg-gradient-navy px-5 py-4 text-primary-foreground">
             <DialogHeader>
               <div className="flex items-center justify-center gap-2 mb-2">
