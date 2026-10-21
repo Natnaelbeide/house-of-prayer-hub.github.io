@@ -119,7 +119,7 @@ export default function Connect() {
                 </div>
               </div>
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=3846+King+St+Alexandria+VA+22302"
+                href="https://www.google.com/maps/dir/?api=1&destination=38.8315147%2C-77.0939320"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
@@ -131,7 +131,7 @@ export default function Connect() {
             <div className="rounded-2xl overflow-hidden shadow-elevated border border-border aspect-square md:aspect-auto">
               <iframe
                 title="Church Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.5!2d-77.1!3d38.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQ5JzEyLjAiTiA3N8KwMDYnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps?q=3846%20King%20St%2C%20Alexandria%2C%20VA%2022302&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: 300 }}
