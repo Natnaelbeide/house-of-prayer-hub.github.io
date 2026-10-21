@@ -66,7 +66,7 @@ export default function UpcomingPopup() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className="flex max-h-[85vh] w-[calc(100vw-1.5rem)] max-w-lg flex-col overflow-hidden border-accent/30 bg-card p-0 [&>button:last-child]:text-primary-foreground/80 [&>button:last-child]:hover:bg-white/10 [&>button:last-child]:hover:text-primary-foreground">
-        <div className="bg-gradient-navy px-5 py-4 text-primary-foreground">
+        <div className="shrink-0 bg-gradient-navy px-5 py-4 text-primary-foreground">
           <DialogHeader>
             <div className="flex items-center justify-center gap-2 mb-2">
               <Sparkles className="text-accent" size={22} />
@@ -195,7 +195,7 @@ export default function UpcomingPopup() {
           </div>
         </div>
 
-        <div className="px-5 pb-5">
+        <div className="shrink-0 px-5 pb-5">
           <Button
             onClick={() => setOpen(false)}
             className="w-full bg-gradient-gold text-foreground font-semibold hover:opacity-90"
