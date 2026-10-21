@@ -1,3 +1,4 @@
+import worshipHealingPoster from "@/assets/announcements/worship-healing-poster.jpg.asset.json";
 import worshipHealingVideo from "@/assets/announcements/worship-healing.mp4.asset.json";
 import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
 import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
@@ -48,6 +49,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     time: "Fri 6:30 PM & Sun 3:00 PM",
     description: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
     descriptionTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
+    posterUrl: worshipHealingPoster.url,
     videoUrl: worshipHealingVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
