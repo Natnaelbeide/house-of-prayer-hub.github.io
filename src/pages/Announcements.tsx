@@ -44,6 +44,7 @@ export default function Announcements() {
                 time: "Fri 6:30 PM & Sun 3:00 PM",
                 desc: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
                 descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
+                poster: worshipHealingPoster.url,
                 highlight: true,
               },
               {
