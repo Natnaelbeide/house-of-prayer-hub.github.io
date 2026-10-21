@@ -186,16 +186,6 @@ export default function AnnouncementBell() {
             </Button>
           </div>
 
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            onClick={() => setOpen(false)}
-            className="absolute right-2 top-2 text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"
-            aria-label="Close popup"
-          >
-            <X size={18} />
-          </Button>
         </DialogContent>
       </Dialog>
     </>
