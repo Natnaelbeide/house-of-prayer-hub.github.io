@@ -11,4 +11,6 @@
 - [x] Add Tigrinya under the English invitation lines on the leaflet
 - [x] Apply the user's Ge'ez correction: ንበረኸት ኢኹም ተፈጢርኩም
 - [ ] Second leaflet Ge'ez line (ንኢየሱስ ንምርኻብ ንዑ…) still awaits the user's correction
-- [ ] Publish the site (popup return, popup sizing, arrow visibility, map fixes)
+- [x] Recolour the pink banners and altar cloth in the pulpit hero photo to gold
+- [ ] Publish the site (popup return, popup sizing, arrow visibility, map fixes, gold hero photo)
+
