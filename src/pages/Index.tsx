@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logo from "@/assets/logo.png";
-import heroBg from "@/assets/hero-bg-gold.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 function useParallax() {
   const bgRef = useRef<HTMLImageElement>(null);

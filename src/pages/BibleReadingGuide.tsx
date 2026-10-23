@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { readingPlan, type ReadingDay } from "@/data/readingPlan";
-import heroBg from "@/assets/hero-bg-gold.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 import churchPhoto from "@/assets/90-day-bible-guide.jpg.asset.json";
 
 interface ChapterReading {
