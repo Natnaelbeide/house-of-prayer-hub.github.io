@@ -4,7 +4,6 @@ import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
 import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
 import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
-import fastingPrayerVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
 import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
 
 export interface UpcomingProgram {
@@ -26,21 +25,9 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-21-popup-return-v1";
+export const POPUP_VERSION = "2026-10-24-popup-no-fasting-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
-  {
-    id: "fasting-prayer-program",
-    title: "Fasting and Prayer Program",
-    titleTi: "ቐጻሊ ናይ ጾምን ጸሎትን ግዜ",
-    date: "October 21-23",
-    time: "Closing prayer 8:15 PM nightly on WhatsApp",
-    description: "Join us for three days of fasting and prayer as a church family. Closing prayer every night at 8:15 PM on WhatsApp.",
-    descriptionTi: "ነዚ ሰሙን እዚውን ክንቕጽል ኢና ሕበሩና",
-    videoUrl: fastingPrayerVideo.url,
-    location: "3846 King St, Alexandria, VA",
-    isNew: true,
-  },
   {
     id: "worship-healing-conference",
     title: "Revival Meetings with Pastor Tesfazion Hagos",
