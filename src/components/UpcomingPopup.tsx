@@ -91,7 +91,7 @@ export default function UpcomingPopup() {
               key={program.id}
               ref={videoRef}
               src={program.videoUrl}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
               controls
               autoPlay
               muted
