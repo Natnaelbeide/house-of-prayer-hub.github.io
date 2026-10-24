@@ -1,6 +1,6 @@
 import worshipHealingPoster from "@/assets/announcements/revival-poster.jpg.asset.json";
 import worshipHealingVideo from "@/assets/announcements/worship-healing.mp4.asset.json";
-import conferenceVideo from "@/assets/announcements/conference.mp4.asset.json";
+import conferenceVideo from "@/assets/announcements/upcoming-conference-oct24.mp4.asset.json";
 import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4.asset.json";
 import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
@@ -25,7 +25,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-24-popup-no-fasting-v1";
+export const POPUP_VERSION = "2026-10-24-conference-video-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
