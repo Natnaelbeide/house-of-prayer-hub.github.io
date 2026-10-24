@@ -54,7 +54,7 @@ export default function Announcements() {
                 date: "November 13-15",
                 time: "TBA",
                 desc: "Join us for a powerful conference featuring a special guest and a dedicated prayer session for youth and young adults. More details coming soon!",
-                descTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ንህጻናትን፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
+                descTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ከምኡውን ዘማሪ ኣዶናይ ካብ ካናዳ ፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕ ፈውሲን ምንጋፍን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ምስ እትደልዮ ተወከሱና።",
                 highlight: true,
               },
               {

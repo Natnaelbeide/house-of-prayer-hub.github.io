@@ -25,7 +25,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-10-24-conference-video-v2";
+export const POPUP_VERSION = "2026-10-24-conference-geez-v3";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -48,7 +48,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     date: "November 13-15",
     time: "TBA",
     description: "A special guest joins us for a powerful conference with a dedicated prayer session for youth and young adults.",
-    descriptionTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ንህጻናትን፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ኣብ ቀረባ ግዜ።",
+    descriptionTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ከምኡውን ዘማሪ ኣዶናይ ካብ ካናዳ ፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕ ፈውሲን ምንጋፍን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ምስ እትደልዮ ተወከሱና።",
     videoUrl: conferenceVideo.url,
     location: "3846 King St, Alexandria, VA",
     isNew: true,
