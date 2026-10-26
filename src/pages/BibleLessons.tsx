@@ -18,6 +18,20 @@ type Lesson = {
 
 const lessons: Lesson[] = [
   {
+    title: "What Are You Planting in Your Heart?",
+    date: "Sunday, October 25, 2026",
+    scripture: "Galatians 6:7–10",
+    summary:
+      "This week in Sunday School, our children learned from the Apostle Paul's teaching about sowing and reaping. Just as seeds grow into plants, our daily choices, words, and actions influence our character and spiritual growth.",
+    application:
+      "The children explored how planting good spiritual seeds, such as love, kindness, patience, honesty, and faith, can help them grow closer to God. They also learned the importance of making wise decisions, reading God's Word, praying, and remaining faithful even when spiritual growth takes time.",
+    memoryVerse:
+      "\u201CA man reaps what he sows.\u201D",
+    memoryVerseRef: "Galatians 6:7",
+    takeaway:
+      "The choices we make today shape who we become tomorrow. Plant seeds of love, kindness, and faith, and let God guide your spiritual growth.",
+  },
+  {
     title: "Trusting God's Timing",
     date: "Sunday, October 18, 2026",
     scripture: "John 11:1–44",
