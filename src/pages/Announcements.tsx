@@ -41,7 +41,7 @@ export default function Announcements() {
                 title: "Upcoming Conference",
                 titleTi: "ዝመጽእ ጉባኤ",
                 date: "November 13-15",
-                time: "Friday 6:00 PM · Sat & Sun TBA",
+                time: "Friday 6:00 PM · Saturday 5:00 PM · Sun TBA",
                 desc: "Join us for a special conference with Pastor Meseret Daniel from Australia and worship singer Adonay Efrem from Canada, featuring a special healing and deliverance prayer session for youth, young adults, and everyone. More details coming soon!",
                 descTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ከምኡውን ዘማሪ ኣዶናይ ካብ ካናዳ ፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕ ፈውሲን ምንጋፍን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ምስ እትደልዮ ተወከሱና።",
                 highlight: true,
