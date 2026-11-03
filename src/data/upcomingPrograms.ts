@@ -23,7 +23,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-03-conference-details-v1";
+export const POPUP_VERSION = "2026-11-03-conference-details-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -31,7 +31,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     title: "Upcoming Conference",
     titleTi: "ዝመጽእ ጉባኤ",
     date: "November 13-15",
-    time: "Friday 6:00 PM · Sat & Sun TBA",
+    time: "Friday 6:00 PM · Saturday 5:00 PM · Sun TBA",
     description: "Join us for a special conference with Pastor Meseret Daniel from Australia and worship singer Adonay Efrem from Canada, featuring a special healing and deliverance prayer session for youth, young adults, and everyone.",
     descriptionTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ከምኡውን ዘማሪ ኣዶናይ ካብ ካናዳ ፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕ ፈውሲን ምንጋፍን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ምስ እትደልዮ ተወከሱና።",
     videoUrl: conferenceVideo.url,
