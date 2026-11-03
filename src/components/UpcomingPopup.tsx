@@ -83,23 +83,29 @@ export default function UpcomingPopup() {
         </div>
 
         <div className="min-h-0 flex-1 overflow-y-auto">
-          <div className="relative aspect-video bg-primary">
+          <div className="relative bg-primary">
             {program.posterUrl ? (
-              <img src={program.posterUrl} alt={`${program.title} poster`} className="h-full w-full object-contain" />
+              <img
+                src={program.posterUrl}
+                alt={`${program.title} poster`}
+                className="mx-auto block max-h-[52vh] w-auto max-w-full object-contain"
+              />
             ) : (
-            <video
-              key={program.id}
-              ref={videoRef}
-              src={program.videoUrl}
-              className="h-full w-full object-contain"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label={`${program.title} video announcement`}
-            />
+              <div className="aspect-video">
+                <video
+                  key={program.id}
+                  ref={videoRef}
+                  src={program.videoUrl}
+                  className="h-full w-full object-contain"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label={`${program.title} video announcement`}
+                />
+              </div>
             )}
             {program.isNew && (
               <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-xs font-semibold text-accent-foreground shadow-gold">
