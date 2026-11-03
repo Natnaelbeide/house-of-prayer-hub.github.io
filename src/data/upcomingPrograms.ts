@@ -29,19 +29,6 @@ export const POPUP_VERSION = "2026-10-24-conference-geez-v3";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
-    id: "worship-healing-conference",
-    title: "Revival Meetings with Pastor Tesfazion Hagos",
-    titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
-    date: "October 23 & 25",
-    time: "Fri 6:30 PM & Sun 3:00 PM",
-    description: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
-    descriptionTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
-    posterUrl: worshipHealingPoster.url,
-    videoUrl: worshipHealingVideo.url,
-    location: "3846 King St, Alexandria, VA",
-    isNew: true,
-  },
-  {
     id: "upcoming-conference",
     title: "Upcoming Conference",
     titleTi: "ዝመጽእ ጉባኤ",
