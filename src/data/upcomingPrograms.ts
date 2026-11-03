@@ -23,7 +23,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-03-conference-details-v3";
+export const POPUP_VERSION = "2026-11-03-sunday-2pm-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -57,7 +57,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     title: "Sunday Service",
     titleTi: "ናይ ሰንበት ኣገልግሎት",
     date: "Every Sunday",
-    time: "3:00 PM",
+    time: "2:00 PM",
     description: "Join us for worship, prayer, and the Word.",
     descriptionTi: "ኣብ 3846 King St, Alexandria, VA ምሳና ኣምልኹ። ሓደስቲ ኣጋይሽን ስድራቤታትን ኩሉ ግዜ እንቋዕ ደሓን መጻእኩም።",
     videoUrl: sundayServiceVideo.url,
