@@ -67,7 +67,7 @@ export default function Announcements() {
                 title: "Sunday Service",
                 titleTi: "ናይ ሰንበት ኣገልግሎት",
                 date: "Every Sunday",
-                time: "3:00 PM",
+                time: "2:00 PM",
                 desc: "Come worship with us at 3846 King St, Alexandria, VA. Visitors and new families are always welcome.",
                 descTi: "ኣብ 3846 King St, Alexandria, VA ምሳና ኣምልኹ። ሓደስቲ ኣጋይሽን ስድራቤታትን ኩሉ ግዜ እንቋዕ ደሓን መጻእኩም።",
               },
