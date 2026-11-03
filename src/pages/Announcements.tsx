@@ -4,7 +4,6 @@ import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
-import worshipHealingPoster from "@/assets/announcements/revival-poster.jpg.asset.json";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -38,16 +37,6 @@ export default function Announcements() {
         <div ref={cardsRef} className="container px-4">
           <div className="max-w-3xl mx-auto space-y-6">
             {([
-              {
-                title: "Revival Meetings with Pastor Tesfazion Hagos",
-                titleTi: "ናይ ኣምልኾን ፈውስን መዓልቲ",
-                date: "October 23 & 25",
-                time: "Fri 6:30 PM & Sun 3:00 PM",
-                desc: "A powerful two-day revival with special guest Pastor Tesfazion Hagos. Come expecting the presence and touch of God.",
-                descTi: "ዓቢ ናይ ኣምልኾን ፈውስን ምስጋርን ምሸት። ህላውነት ኣምላኽን ኢዱን ተጸቢኹም ምጹ።",
-                poster: worshipHealingPoster.url,
-                highlight: true,
-              },
               {
                 title: "Upcoming Conference",
                 titleTi: "ዝመጽእ ጉባኤ",
