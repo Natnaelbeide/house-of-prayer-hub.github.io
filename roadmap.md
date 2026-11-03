@@ -11,5 +11,5 @@
 - [x] Add Tigrinya under the English invitation lines on the leaflet
 - [x] Apply the user's Ge'ez correction: ንበረኸት ኢኹም ተፈጢርኩም
 - [ ] Second leaflet Ge'ez line (ንኢየሱስ ንምርኻብ ንዑ…) still awaits the user's correction
-- [ ] Confirm Sat & Sun times for the Nov 13–15 conference (Friday 6:00 PM is set; Sat/Sun still TBA on the site)
+- [ ] Confirm Sunday time for the Nov 13–15 conference (Fri 6:00 PM, Sat 5:00 PM set; Sun still TBA)
 - [ ] Publish the site (popup return, popup sizing, arrow visibility, map fixes)
