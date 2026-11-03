@@ -11,4 +11,5 @@
 - [x] Add Tigrinya under the English invitation lines on the leaflet
 - [x] Apply the user's Ge'ez correction: ንበረኸት ኢኹም ተፈጢርኩም
 - [ ] Second leaflet Ge'ez line (ንኢየሱስ ንምርኻብ ንዑ…) still awaits the user's correction
+- [ ] Add November 13–15 conference details (times, guest names) to popup + Announcements page, bump POPUP_VERSION
 - [ ] Publish the site (popup return, popup sizing, arrow visibility, map fixes)
