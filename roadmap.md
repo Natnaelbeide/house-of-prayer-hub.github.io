@@ -10,5 +10,6 @@
 - [x] Add the "encounter with Jesus / eternal life" message to the leaflet
 - [x] Add Tigrinya under the English invitation lines on the leaflet
 - [x] Apply the user's Ge'ez correction: ንበረኸት ኢኹም ተፈጢርኩም
+- [x] Add the Holy Spirit Fire Conference poster to the popup and Announcements page
 - [ ] Second leaflet Ge'ez line (ንኢየሱስ ንምርኻብ ንዑ…) still awaits the user's correction
 - [ ] Publish the site (popup return, popup sizing, arrow visibility, map fixes)
