@@ -15,7 +15,7 @@ const AUTO_CLOSE_MS = 3 * 60 * 1000; // auto-close after 3 minutes
 const storageKey = `popup_shown_${POPUP_VERSION}`;
 
 function getMobileDelay() {
-  return typeof window !== "undefined" && window.innerWidth < 768 ? 8000 : 1500;
+  return 0;
 }
 
 export default function UpcomingPopup() {
