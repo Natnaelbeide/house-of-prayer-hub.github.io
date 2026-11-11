@@ -4,6 +4,8 @@ import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
 import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
 import conferencePoster from "@/assets/announcements/holy-spirit-fire-conference.jpg.asset.json";
+import fastingPoster from "@/assets/announcements/fasting-prayer-november.jpg.asset.json";
+import fastingVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
 
 export interface UpcomingProgram {
   id: string;
@@ -24,9 +26,19 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-03-conference-poster-v1";
+export const POPUP_VERSION = "2026-11-11-fasting-prayer-v1";
 
 export const upcomingPrograms: UpcomingProgram[] = [
+  {
+    id: "fasting-prayer-november",
+    title: "Fasting and Prayer",
+    date: "November 10–13, 2026",
+    time: "",
+    description: "Join us for fasting and prayer from November 10 through November 13. To join, text 3193304590.",
+    videoUrl: fastingVideo.url,
+    posterUrl: fastingPoster.url,
+    isNew: true,
+  },
   {
     id: "upcoming-conference",
     title: "Upcoming Conference",

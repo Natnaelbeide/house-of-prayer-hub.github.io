@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Add November 10–13 fasting and prayer poster to the Announcements page and popup
+
 - [x] Generate a unique video for each popup event
 - [x] Add event videos to the shared announcement list
 - [x] Replace popup descriptions with one-at-a-time video playback

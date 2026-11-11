@@ -5,6 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
 import conferencePoster from "@/assets/announcements/holy-spirit-fire-conference.jpg.asset.json";
+import { upcomingPrograms } from "@/data/upcomingPrograms";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -38,6 +39,16 @@ export default function Announcements() {
         <div ref={cardsRef} className="container px-4">
           <div className="max-w-3xl mx-auto space-y-6">
             {([
+              ...upcomingPrograms.filter((program) => program.id === "fasting-prayer-november").map((program) => ({
+                title: program.title,
+                titleTi: "",
+                date: program.date,
+                time: program.time,
+                desc: program.description,
+                descTi: "",
+                highlight: program.isNew,
+                poster: program.posterUrl,
+              })),
               {
                 title: "Upcoming Conference",
                 titleTi: "ዝመጽእ ጉባኤ",
@@ -108,17 +119,17 @@ export default function Announcements() {
                         </span>
                       )}
                     </div>
-                    <p className="text-accent font-semibold mb-2" lang="ti">{item.titleTi}</p>
+                    {item.titleTi && <p className="text-accent font-semibold mb-2" lang="ti">{item.titleTi}</p>}
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
                       <span className="inline-flex items-center gap-1.5">
                         <Calendar size={14} className="text-accent" /> {item.date}
                       </span>
-                      <span className="inline-flex items-center gap-1.5">
+                      {item.time && <span className="inline-flex items-center gap-1.5">
                         <Clock size={14} className="text-accent" /> {item.time}
-                      </span>
+                      </span>}
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
-                    <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>
+                    {item.descTi && <p className="text-muted-foreground leading-relaxed mt-2" lang="ti">{item.descTi}</p>}
                     {item.note && (
                       <p className="font-bold text-foreground mt-2">{item.note}</p>
                     )}

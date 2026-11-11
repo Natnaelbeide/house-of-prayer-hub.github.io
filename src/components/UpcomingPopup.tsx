@@ -142,10 +142,10 @@ export default function UpcomingPopup() {
                 <Calendar size={15} className="shrink-0 text-accent" />
                 <span>{program.date}</span>
               </div>
-              <div className="flex items-center gap-2">
+              {program.time && <div className="flex items-center gap-2">
                 <Clock size={15} className="shrink-0 text-accent" />
                 <span>{program.time}</span>
-              </div>
+              </div>}
               {program.location && (
                 <div className="flex items-start gap-2">
                   <MapPin size={15} className="mt-0.5 shrink-0 text-accent" />
