@@ -3,7 +3,7 @@ import schoolOfMinistryVideo from "@/assets/announcements/school-of-ministry.mp4
 import sundayServiceVideo from "@/assets/announcements/sunday-service.mp4.asset.json";
 import fridayPrayerVideo from "@/assets/announcements/friday-prayer.mp4.asset.json";
 import ministersClassVideo from "@/assets/announcements/ministers-class.mp4.asset.json";
-import conferencePoster from "@/assets/announcements/holy-spirit-fire-conference.jpg.asset.json";
+import conferencePoster from "@/assets/announcements/holy-spirit-fire-november-poster.jpg.asset.json";
 import fastingPoster from "@/assets/announcements/fasting-prayer-november.jpg.asset.json";
 import fastingVideo from "@/assets/announcements/fasting-prayer.mp4.asset.json";
 
@@ -26,7 +26,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-11-fasting-prayer-v1";
+export const POPUP_VERSION = "2026-11-11-conference-poster-v2";
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {

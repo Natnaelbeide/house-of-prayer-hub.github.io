@@ -4,7 +4,7 @@ import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
-import conferencePoster from "@/assets/announcements/holy-spirit-fire-conference.jpg.asset.json";
+import conferencePoster from "@/assets/announcements/holy-spirit-fire-november-poster.jpg.asset.json";
 import { upcomingPrograms } from "@/data/upcomingPrograms";
 
 export default function Announcements() {
