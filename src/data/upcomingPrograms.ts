@@ -26,7 +26,12 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-11-conference-poster-v2";
+export const POPUP_VERSION = "2026-11-11-no-wednesday-thursday-class-v1";
+
+export const classCancellation = {
+  dates: ["2026-11-11", "2026-11-12"],
+  note: "No Wednesday or Thursday class this week (November 11–12).",
+};
 
 export const upcomingPrograms: UpcomingProgram[] = [
   {
@@ -37,6 +42,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
     description: "Join us for fasting and prayer from November 10 through November 13. To join, text 3193304590.",
     videoUrl: fastingVideo.url,
     posterUrl: fastingPoster.url,
+    note: classCancellation.note,
     isNew: true,
   },
   {
@@ -90,6 +96,7 @@ export const upcomingPrograms: UpcomingProgram[] = [
   },
   {
     id: "wednesday-ministers",
+    note: classCancellation.note,
     title: "Wednesday Ministers Class",
     titleTi: "ናይ ረቡዕ ትምህርቲ ኣገልገልቲ",
     date: "Every Wednesday",

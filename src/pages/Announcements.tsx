@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
 import conferencePoster from "@/assets/announcements/holy-spirit-fire-november-poster.jpg.asset.json";
-import { upcomingPrograms } from "@/data/upcomingPrograms";
+import { classCancellation, upcomingPrograms } from "@/data/upcomingPrograms";
 
 export default function Announcements() {
   const cardsRef = useScrollReveal();
@@ -48,6 +48,7 @@ export default function Announcements() {
                 descTi: "",
                 highlight: program.isNew,
                 poster: program.posterUrl,
+                note: program.note,
               })),
               {
                 title: "Upcoming Conference",
@@ -70,6 +71,7 @@ export default function Announcements() {
               },
               {
                 title: "Wednesday Ministers Class",
+                note: classCancellation.note,
                 titleTi: "ናይ ረቡዕ ትምህርቲ ኣገልገልቲ",
                 date: "Every Wednesday",
                 time: "8:00 PM",
