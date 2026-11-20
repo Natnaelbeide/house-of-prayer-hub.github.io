@@ -26,7 +26,7 @@ export interface UpcomingProgram {
 
 // Update this list whenever there is a new program or event.
 // Changing `version` will make the popup show again for returning visitors.
-export const POPUP_VERSION = "2026-11-11-no-wednesday-thursday-class-v1";
+export const POPUP_VERSION = "2026-11-20-fasting-nov24-dec31-v1";
 
 export const classCancellation = {
   dates: ["2026-11-11", "2026-11-12"],
@@ -37,9 +37,9 @@ export const upcomingPrograms: UpcomingProgram[] = [
   {
     id: "fasting-prayer-november",
     title: "Fasting and Prayer",
-    date: "November 10–13, 2026",
+    date: "November 24 – December 31, 2026",
     time: "",
-    description: "Join us for fasting and prayer from November 10 through November 13. To join, text 3193304590.",
+    description: "Join us for fasting and prayer from November 24 through December 31. To join, text 3193304590.",
     videoUrl: fastingVideo.url,
     posterUrl: fastingPoster.url,
     note: classCancellation.note,
