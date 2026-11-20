@@ -4,7 +4,6 @@ import { Megaphone, Calendar, Clock, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import MinistryRegistrationForm from "@/components/MinistryRegistrationForm";
 import AnnouncementAudio from "@/components/AnnouncementAudio";
-import conferencePoster from "@/assets/announcements/holy-spirit-fire-november-poster.jpg.asset.json";
 import { upcomingPrograms } from "@/data/upcomingPrograms";
 
 export default function Announcements() {
@@ -50,16 +49,6 @@ export default function Announcements() {
                 poster: program.posterUrl,
                 note: program.note,
               })),
-              {
-                title: "Upcoming Conference",
-                titleTi: "ዝመጽእ ጉባኤ",
-                date: "November 13-15",
-                time: "Fri 6:00 PM · Sat 5:00 PM · Sun 2:00 PM",
-                desc: "Join us for a special conference with Pastor Meseret Daniel from Australia and worship singer Adonay Efrem from Canada, featuring a special healing and deliverance prayer session for youth, young adults, and everyone. More details coming soon!",
-                descTi: "ምስ ዕዱም ጋሻና ፓ/ር መሰረት ዳንኤል ካብ ኣውስትራሊያ ከምኡውን ዘማሪ ኣዶናይ ካብ ካናዳ ፡ንመንእሰያትን ከም ውን ንኹሉ ዝተዳለወ ፍሉይ ናይ ምንቕቓሕ ፈውሲን ምንጋፍን ጸሎትን ዝተሓወሰ ጉባኤ ክህልወና እዩ። ተወሳኺ ሓበሬታ ምስ እትደልዮ ተወከሱና።",
-                highlight: true,
-                poster: conferencePoster.url,
-              },
               {
                 title: "School of Ministry — Bible School",
                 titleTi: "ቤት ትምህርቲ ኣገልግሎት — መጽሓፍ ቅዱስ",

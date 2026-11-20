@@ -3,6 +3,7 @@
 - [x] Add November 10–13 fasting and prayer poster to the Announcements page and popup
 - [x] Change fasting and prayer dates to November 24 – December 31, 2026
 - [x] Remove the expired November 11–12 class cancellation note from popup and page
+- [x] Remove the November 13–15 conference announcement from popup and page
 
 - [x] Generate a unique video for each popup event
 - [x] Add event videos to the shared announcement list
