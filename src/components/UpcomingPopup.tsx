@@ -65,7 +65,7 @@ export default function UpcomingPopup() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="flex max-h-[85vh] w-[calc(100vw-1.5rem)] max-w-lg flex-col overflow-hidden border-accent/30 bg-card p-0 [&>button:last-child]:text-primary-foreground/80 [&>button:last-child]:hover:bg-white/10 [&>button:last-child]:hover:text-primary-foreground">
+      <DialogContent className="flex max-h-[92vh] sm:max-h-[85vh] w-[calc(100vw-1rem)] sm:w-[calc(100vw-1.5rem)] max-w-lg flex-col overflow-hidden border-accent/30 bg-card p-0 [&>button:last-child]:text-primary-foreground/80 [&>button:last-child]:hover:bg-white/10 [&>button:last-child]:hover:text-primary-foreground">
         <div className="shrink-0 bg-gradient-navy px-5 py-4 text-primary-foreground">
           <DialogHeader>
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -85,11 +85,13 @@ export default function UpcomingPopup() {
         <div className="min-h-0 flex-1 overflow-y-auto">
           <div className="relative bg-primary">
             {program.posterUrl ? (
-              <img
-                src={program.posterUrl}
-                alt={`${program.title} poster`}
-                className="mx-auto block max-h-[52vh] w-auto max-w-full object-contain"
-              />
+              <a href={program.posterUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open ${program.title} poster full size`}>
+                <img
+                  src={program.posterUrl}
+                  alt={`${program.title} poster`}
+                  className="block h-auto w-full object-contain sm:mx-auto sm:max-h-[60vh] sm:w-auto sm:max-w-full"
+                />
+              </a>
             ) : (
               <div className="aspect-video">
                 <video
